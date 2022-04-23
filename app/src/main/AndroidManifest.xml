@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.complyanyproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/splash_screen"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/splash_screen"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ComplyAnyProject">
+        <activity
+            android:name=".activity.CreateProxyUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CreateChangeUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CreateUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.NewComplianceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TermsAndConditionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".selectorActivity.SelectorCalenderManagement"
+            android:exported="false" />
+        <activity
+            android:name=".selectorActivity.StateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".selectorActivity.LawTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".selectorActivity.LawNatureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".selectorActivity.SelectorEntityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HolidaysActivity"
+            android:exported="false" />
+        <activity
+            android:name=".selectorActivity.CompanySelectorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".postComplainceActivities.CompletedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".postComplainceActivities.UpComingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".postComplainceActivities.ThisMonthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".postComplainceActivities.TodayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UpdateComplainceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SupportActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".settingsActivities.ComplianceTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".settingsActivities.UserRoleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".settingsActivities.ComplianceNatureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".settingsActivities.StockExchangeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".settingsActivities.IndustryTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".settingsActivities.EntityTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SubLawOrSubHeadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LawOrHeadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.EntityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CountryRegionCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CountryCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SubRegionalCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RegionalCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GlobalCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SubDepartmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DepartmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CreateCalenderManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CalenderManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ConfigureStandardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.EmailContactUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HelpContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FaqActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HelpDemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HelpDocumentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HelpAndSupportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OverDueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SelectorClientSubGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CreateClientSubGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ClientSubGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CreateClientGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ClientGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ClientManagement"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RegisterEmailNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ProxyUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ChangeUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ResourceManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".activity.TestingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CreateSubDepartmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ListSubDepartmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

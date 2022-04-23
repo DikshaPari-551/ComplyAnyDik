@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:paddingHorizontal="8dp">
+
+            <TextView
+                android:id="@+id/toolbarBackIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="@string/back"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                app:drawableStartCompat="@drawable/ic_back_arrow"
+                app:drawableTint="@color/blue" />
+
+            <TextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="@string/my_profile"
+                android:textColor="@color/blue"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_below="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+        <RelativeLayout
+            android:layout_below="@id/divider"
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageProfile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imageProfile"
+                android:text="@string/my_profile"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_forward_arrow"/>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_below="@id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+        <RelativeLayout
+            android:layout_below="@id/divider2"
+            android:id="@+id/changePasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/imagePassword"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/change_password" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toRightOf="@id/imagePassword"
+                android:text="@string/change_password"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_forward_arrow"/>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_below="@id/changePasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+        <RelativeLayout
+            android:id="@+id/resourseManagementLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider4"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/imageResource"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/resource_management_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toRightOf="@id/imageResource"
+                android:text="Resource Management"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_forward_arrow" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

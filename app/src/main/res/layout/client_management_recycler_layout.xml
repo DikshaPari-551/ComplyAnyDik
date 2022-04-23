@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp"
+    android:id="@+id/layout"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:paddingStart="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        tools:ignore="RtlSymmetry">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.0"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp">
+
+            <TextView
+                android:paddingVertical="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Client Name"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Client Group"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Client Sub Group"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Income Tax No"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email id"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile No."
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingVertical="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.2"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingVertical="5dp"
+                android:id="@+id/itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dsada"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:id="@+id/itemGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rajasthan"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:id="@+id/itemSubGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bikaner"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:id="@+id/itemTaxNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24641"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:id="@+id/itemAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asdadd"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:id="@+id/itemContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25461131"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:id="@+id/itemEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="masomad@gmakja.cpm"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:id="@+id/itemMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="45681523645"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/imgEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="2.5"
+                android:src="@drawable/ic_edit" />
+
+            <ImageView
+                android:id="@+id/imgDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="2.5"
+                android:src="@drawable/ic_delete" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

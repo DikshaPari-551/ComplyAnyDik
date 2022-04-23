@@ -1,0 +1,2123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.NewComplianceActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="top"
+        android:background="@color/white"
+        android:paddingHorizontal="8dp">
+
+        <TextView
+            android:id="@+id/backNewComplaince"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="center_vertical"
+            android:text="@string/back"
+            android:textColor="@color/blue"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_back_arrow"
+            app:drawableTint="@color/blue" />
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="Compliance Create"
+            android:textColor="@color/blue"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:id="@+id/selectEntityCreateCompliance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select Entity"
+                            android:textColor="@color/blue"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#dcdcdc" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/selectEntityLayoutCreateCompliance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="30dp"
+                        android:visibility="visible"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Global Region "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/rlSelectGlobalRegionCreateCompliance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@drawable/normal_bg"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp">
+
+                                    <TextView
+                                        android:id="@+id/txtGlobalRegionCreateCompliance"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/normal_bg"
+                                        android:backgroundTint="#00000000"
+                                        android:maxLength="50"
+                                        android:maxLines="1"
+                                        android:paddingLeft="5dp"
+                                        android:text="Select Global Region"
+                                        android:textSize="16sp"
+                                        app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Global Sub-Region "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/rlSelectGlobalSubRegionCreateCompliance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@drawable/normal_bg"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp">
+
+                                    <TextView
+                                        android:id="@+id/txtGlobalSubRegionCreateCompliance"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/normal_bg"
+                                        android:backgroundTint="#00000000"
+                                        android:maxLength="50"
+                                        android:maxLines="1"
+                                        android:paddingLeft="5dp"
+                                        android:text="Select Global Sub Region"
+                                        android:textSize="16sp"
+                                        app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Country Office "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/rlSelectCountyOfficeCreateCompliance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@drawable/normal_bg"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp">
+
+                                    <TextView
+                                        android:id="@+id/txtCountryOfficeCreateCompliance"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/normal_bg"
+                                        android:backgroundTint="#00000000"
+                                        android:maxLength="50"
+                                        android:maxLines="1"
+                                        android:paddingLeft="5dp"
+                                        android:text="Select Country Office"
+                                        android:textSize="16sp"
+                                        app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Country Region "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/rlSelectCountryRegionCreateCompliance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@drawable/normal_bg"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp">
+
+                                    <TextView
+                                        android:id="@+id/txtCountryRegionCreateCompliance"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/normal_bg"
+                                        android:backgroundTint="#00000000"
+                                        android:maxLength="50"
+                                        android:maxLines="1"
+                                        android:paddingLeft="5dp"
+                                        android:text="Select Country Region"
+                                        android:textSize="16sp"
+                                        app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Entity Name "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="*"
+                                        android:textColor="#FF0808"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/rlSelectEntityCreateCompliance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@drawable/normal_bg"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp">
+
+                                    <TextView
+                                        android:id="@+id/txtEntityNameCreateCompliance"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/normal_bg"
+                                        android:backgroundTint="#00000000"
+                                        android:maxLength="50"
+                                        android:maxLines="1"
+                                        android:paddingLeft="5dp"
+                                        android:text="Select Entity Name"
+                                        android:textSize="16sp"
+                                        app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!--  Select Law And User    -->
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlSelectLawAndUserLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select Law &amp; User"
+                            android:textColor="@color/blue"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#dcdcdc" />
+
+
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/cvSelectLawAndUserCreateCompliance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="30dp"
+                        android:visibility="gone"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Compliance Type "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="*"
+                                        android:textColor="#FF0808"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+
+                                    <RelativeLayout
+                                        android:id="@+id/rlSelectComplianceTypeCreateCompliance"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@drawable/normal_bg"
+                                        android:layout_marginEnd="@dimen/_5mdp"
+                                        android:layout_weight="1.5"
+                                        android:padding="10dp">
+
+                                        <TextView
+                                            android:id="@+id/txtComplianceTypeCreateCompliance"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@drawable/normal_bg"
+                                            android:backgroundTint="#00000000"
+                                            android:maxLength="50"
+                                            android:maxLines="1"
+                                            android:paddingLeft="5dp"
+                                            android:text="Select Compliance Type-"
+                                            android:textSize="16sp"
+                                            app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+
+                                    </RelativeLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:layout_marginTop="5dp">
+
+                                        <Button
+                                            android:id="@+id/btnComplianceType"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:backgroundTint="#0a3383"
+                                            android:text="New"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/white" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Law or Head "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/rlSelectLawAndHeadCreateCompliance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@drawable/normal_bg"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp">
+
+                                    <TextView
+                                        android:id="@+id/txtLawAndHeadCreateCompliance"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/normal_bg"
+                                        android:backgroundTint="#00000000"
+                                        android:maxLength="50"
+                                        android:maxLines="1"
+                                        android:paddingLeft="5dp"
+                                        android:text="Select Law and Head"
+                                        android:textSize="16sp"
+                                        app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Sub-Law or Sub-Head "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/rlSelectSubLawAndSubHeadCreateCompliance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@drawable/normal_bg"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp">
+
+                                    <TextView
+                                        android:id="@+id/SubLawAndSubHeadTextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/normal_bg"
+                                        android:backgroundTint="#00000000"
+                                        android:maxLength="50"
+                                        android:maxLines="1"
+                                        android:paddingLeft="5dp"
+                                        android:text="Select Sub-Law or Sub-Head"
+                                        android:textSize="16sp"
+                                        app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Department "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="*"
+                                        android:textColor="#FF0808"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/rlSelectDepartmentCreateCompliance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@drawable/normal_bg"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp">
+
+                                    <TextView
+                                        android:id="@+id/txtSelectDepartmentCreateCompliance"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/normal_bg"
+                                        android:backgroundTint="#00000000"
+                                        android:maxLength="50"
+                                        android:maxLines="1"
+                                        android:paddingLeft="5dp"
+                                        android:text="Select Department"
+                                        android:textSize="16sp"
+                                        app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Sub-Department "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="*"
+                                        android:textColor="#FF0808"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/rlSelectSubDepartmentCreateCompliance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@drawable/normal_bg"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp">
+
+                                    <TextView
+                                        android:id="@+id/txtSubDepartmentCreateCompliance"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/normal_bg"
+                                        android:backgroundTint="#00000000"
+                                        android:maxLength="50"
+                                        android:maxLines="1"
+                                        android:paddingLeft="5dp"
+                                        android:text="Select Sub Department"
+                                        android:textSize="16sp"
+                                        app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                                </RelativeLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Responsible User "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="*"
+                                        android:textColor="#FF0808"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/rlSelectResponsibleUserCreateCompliance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@drawable/normal_bg"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp">
+
+                                    <TextView
+                                        android:id="@+id/txtResponsibleUserCreateCompliance"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/normal_bg"
+                                        android:backgroundTint="#00000000"
+                                        android:maxLength="50"
+                                        android:maxLines="1"
+                                        android:paddingLeft="5dp"
+                                        android:textSize="16sp"
+                                        app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Client Group "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <RelativeLayout
+                                        android:id="@+id/rlSelectClientGroupCreateCompliance"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1.5"
+                                        android:background="@drawable/normal_bg"
+                                        android:layout_marginEnd="@dimen/_5mdp"
+                                        android:padding="10dp">
+
+                                        <TextView
+                                            android:id="@+id/txtClientGroupCreateCompliance"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@drawable/normal_bg"
+                                            android:backgroundTint="#00000000"
+                                            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                                            android:maxLength="50"
+                                            android:maxLines="1"
+                                            android:paddingLeft="5dp"
+                                            android:text="Select Client Group"
+                                            android:textSize="16sp" />
+
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="0.5">
+
+                                        <Button
+                                            android:id="@+id/btnClientNew"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:backgroundTint="#0a3383"
+                                            android:text="New"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/white" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Client Sub-Group "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <RelativeLayout
+                                        android:id="@+id/rlSelectClientSubGroupCreateCompliance"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1.5"
+                                        android:background="@drawable/normal_bg"
+                                        android:layout_marginEnd="@dimen/_5mdp"
+                                        android:padding="10dp">
+
+                                        <TextView
+                                            android:id="@+id/txtClientSubGroupCreateCompliance"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@drawable/normal_bg"
+                                            android:backgroundTint="#00000000"
+                                            android:maxLength="50"
+                                            android:maxLines="1"
+                                            android:paddingLeft="5dp"
+                                            android:text="Select Client Sub Group"
+                                            android:textSize="16sp"
+                                            app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="0.5">
+
+                                        <Button
+                                            android:id="@+id/btnClientSubGroupbutton"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:backgroundTint="#0a3383"
+                                            android:text="New"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/white" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Client "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/rlSelectClientCreateCompliance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@drawable/normal_bg"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp">
+
+                                    <TextView
+                                        android:id="@+id/txtSelectClientCreateCompliance"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/normal_bg"
+                                        android:backgroundTint="#00000000"
+                                        android:maxLength="50"
+                                        android:maxLines="1"
+                                        android:paddingLeft="5dp"
+                                        android:textSize="16sp"
+                                        app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!--  Define Compilance  -->
+
+                    <RelativeLayout
+                        android:id="@+id/rlSelectDefineComplianceLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Define Compliance"
+                            android:textColor="@color/blue"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#dcdcdc" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvDefineComplianceLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="30dp"
+                        android:visibility="gone"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Importance "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="*"
+                                        android:textColor="#FF0808"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp">
+
+                                    <RadioGroup
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <RadioButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Critical"
+                                            android:textColor="#0A3383"
+                                            android:textSize="16dp" />
+
+                                        <RadioButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginLeft="30dp"
+                                            android:text="Non Crictial"
+                                            android:textColor="#0A3383"
+                                            android:textSize="16dp" />
+
+                                    </RadioGroup>
+
+                                </RelativeLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Compliance Name "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="*"
+                                        android:textColor="#FF0808"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@drawable/normal_bg">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFFFFF"
+                                        android:hint="Enter Compliance Name"
+                                        android:paddingLeft="8dp"
+                                        android:singleLine="true"
+                                        android:textSize="16sp" />
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Attach Notice / Documents "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/normal_bg"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:id="@+id/btnAttach"
+                                        android:layout_width="100dp"
+                                        android:layout_height="30dp"
+                                        android:background="@drawable/normal_bg"
+                                        android:gravity="center"
+                                        android:src="@drawable/ic_baseline_attach_file_24"
+                                        android:text="Choose File" />
+
+                                    <TextView
+                                        android:id="@+id/txtFileName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:hint="No Choosen File"
+                                        android:paddingLeft="10dp"
+                                        android:textSize="14sp" />
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Form / Return No. "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@drawable/normal_bg">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFFFFF"
+                                        android:hint="Enter Form / Return No."
+                                        android:paddingLeft="8dp"
+                                        android:singleLine="true"
+                                        android:textSize="16sp" />
+
+                                </RelativeLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Due Date "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="*"
+                                        android:textColor="#FF0808"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1.4"
+                                        android:background="@drawable/normal_bg"
+                                        android:layout_marginEnd="@dimen/_5mdp"
+                                        android:padding="10dp">
+
+                                        <TextView
+                                            android:id="@+id/txtDueDate"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="8dp"
+                                            android:text="DD-MM-YY"
+                                            android:textSize="14sp" />
+
+                                        <ImageView
+                                            android:id="@+id/imgDueDate"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:layout_alignParentRight="true"
+                                            android:src="@drawable/ic_baseline_calendar_today_24" />
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="0.6">
+
+                                        <Button
+                                            android:id="@+id/btnRecurring"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:backgroundTint="#0a3383"
+                                            android:text="Recurring"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/white"
+                                            android:textSize="14sp" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Revised Due Date 1 "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="*"
+                                        android:textColor="#FF0808"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1.5"
+                                        android:background="@drawable/normal_bg"
+                                        android:layout_marginEnd="@dimen/_5mdp"
+                                        android:padding="10dp">
+
+                                        <TextView
+                                            android:id="@+id/txtRevisedDueDate"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="8dp"
+                                            android:text="DD-MM-YY"
+                                            android:textSize="14sp" />
+
+                                        <ImageView
+                                            android:id="@+id/imgRevisedDueDate"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:layout_alignParentRight="true"
+                                            android:src="@drawable/ic_baseline_calendar_today_24" />
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="0.5">
+
+                                        <Button
+                                            android:id="@+id/btnAdd"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:backgroundTint="#0a3383"
+                                            android:text="Add"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/white"
+                                            android:textSize="14sp" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Reason For Date Extension "
+                                    android:textColor="#0A3383"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="*"
+                                    android:textColor="#FF0808"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/normal_bg">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:backgroundTint="#FFFFFF"
+                                    android:gravity="top|start"
+                                    android:singleLine="false"
+                                    android:hint="Enter Reason For Date  Extension"
+                                    android:inputType="text"
+                                    android:paddingLeft="8dp"
+                                    android:textSize="16sp" />
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Period "
+                                    android:textColor="#0A3383"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="*"
+                                    android:textColor="#FF0808"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/normal_bg">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#FFFFFF"
+                                    android:hint="Enter Period"
+                                    android:paddingLeft="8dp"
+                                    android:singleLine="true"
+                                    android:textSize="16sp" />
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Due Date Description "
+                                    android:textColor="#0A3383"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="*"
+                                    android:textColor="#FF0808"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/normal_bg">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:backgroundTint="#FFFFFF"
+                                    android:gravity="top|start"
+                                    android:singleLine="false"
+                                    android:hint="Enter Date Description"
+                                    android:paddingLeft="8dp"
+                                    android:textSize="16sp" />
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Date Type "
+                                    android:textColor="#0A3383"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="*"
+                                    android:textColor="#FF0808"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Fixed Date"
+                                        android:textColor="#0A3383"
+                                        android:textSize="16dp" />
+
+                                    <RadioButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginLeft="30dp"
+                                        android:text="Working Day Date"
+                                        android:textColor="#0A3383"
+                                        android:textSize="16dp" />
+
+                                </RadioGroup>
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Penalty For Late "
+                                    android:textColor="#0A3383"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:weightSum="4">
+
+                                <LinearLayout
+                                    android:id="@+id/llSelectPenaltyLateCreateCompliance"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/normal_bg"
+                                    android:gravity="right"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp">
+
+                                    <TextView
+                                        android:id="@+id/txtPenaltyLateCreateCompliance"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/normal_bg"
+                                        android:backgroundTint="#00000000"
+                                        android:maxLength="50"
+                                        android:maxLines="1"
+                                        android:paddingLeft="5dp"
+                                        android:text="Select Currency"
+                                        android:textSize="16sp"
+                                        app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    android:background="@drawable/normal_bg">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFFFFF"
+                                        android:hint="Ammount"
+                                        android:inputType="number"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1.5"
+                                    android:background="@drawable/normal_bg"
+                                    android:gravity="right"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp">
+
+                                    <Spinner
+                                        android:id="@+id/PenaltySpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:background="@drawable/normal_bg">
+
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFFFFF"
+                                        android:hint="%"
+                                        android:inputType="number"
+                                        android:textSize="14dp" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Compliance Nature "
+                                    android:textColor="#0A3383"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="*"
+                                    android:textColor="#FF0808"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <RelativeLayout
+                                    android:id="@+id/rlSelectComplianceNatureCreateCompliance"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1.5"
+                                    android:background="@drawable/normal_bg"
+                                    android:layout_marginEnd="@dimen/_5mdp"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:id="@+id/txtComplianceNatureCreateCompliance"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/normal_bg"
+                                        android:backgroundTint="#00000000"
+                                        android:maxLength="50"
+                                        android:maxLines="1"
+                                        android:paddingLeft="5dp"
+                                        android:text="Select Compliance Type-"
+                                        android:textSize="16sp"
+                                        app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="0.5">
+
+                                    <Button
+                                        android:id="@+id/btnComplianceDialog"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:backgroundTint="#0a3383"
+                                        android:text="New"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Attach Document "
+                                    android:textColor="#0A3383"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="*"
+                                    android:textColor="#FF0808"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Optional"
+                                        android:textColor="#0A3383"
+                                        android:textSize="16dp" />
+
+                                    <RadioButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginLeft="30dp"
+                                        android:text=" Mandatory"
+                                        android:textColor="#0A3383"
+                                        android:textSize="16dp" />
+
+                                </RadioGroup>
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!--Reminder Escalation-->
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlReminderLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reminder &amp; Escalation "
+                            android:textColor="@color/blue"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+
+                    </RelativeLayout>
+
+                    <View
+
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#dcdcdc" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvReminderLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="30dp"
+                        android:visibility="gone"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Reminder (before due date) "
+                                        android:textColor="#0A3383"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/normal_bg">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#FFFFFF"
+                                    android:hint="1st"
+                                    android:paddingLeft="5dp"
+                                    android:singleLine="true"
+                                    android:textSize="16sp" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/normal_bg">
+
+                                <EditText
+                                    android:layout_width="510dp"
+                                    android:layout_height="match_parent"
+                                    android:backgroundTint="#FFFFFF"
+                                    android:hint="2nd"
+                                    android:paddingLeft="5dp"
+                                    android:singleLine="true"
+                                    android:textSize="16sp" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/normal_bg">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#FFFFFF"
+                                    android:hint="3rd"
+                                    android:paddingLeft="5dp"
+                                    android:singleLine="true"
+                                    android:textSize="16sp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/normal_bg">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#FFFFFF"
+                                    android:hint="4th "
+                                    android:paddingLeft="5dp"
+                                    android:singleLine="true"
+                                    android:textSize="16sp" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/normal_bg">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#FFFFFF"
+                                    android:hint="5th"
+                                    android:paddingLeft="5dp"
+                                    android:singleLine="true"
+                                    android:textSize="16sp" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/normal_bg">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#FFFFFF"
+                                    android:hint="6th"
+                                    android:paddingLeft="5dp"
+                                    android:singleLine="true"
+                                    android:textSize="16sp" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/normal_bg">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#FFFFFF"
+                                    android:hint="7th"
+                                    android:paddingLeft="5dp"
+                                    android:singleLine="true"
+                                    android:textSize="16sp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/normal_bg">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#FFFFFF"
+                                    android:hint="8th"
+                                    android:paddingLeft="5dp"
+                                    android:singleLine="true"
+                                    android:textSize="16sp" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/normal_bg">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#FFFFFF"
+                                    android:hint="9th"
+                                    android:paddingLeft="5dp"
+                                    android:singleLine="true"
+                                    android:textSize="16sp" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/normal_bg">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#FFFFFF"
+                                    android:hint="10th"
+                                    android:paddingLeft="5dp"
+                                    android:singleLine="true"
+                                    android:textSize="16sp" />
+
+                            </RelativeLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Escalation 1 "
+                                    android:textColor="#0A3383"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="*"
+                                    android:textColor="#FF0808"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rlSelectEscapsulationCreateCompliance1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/normal_bg"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp">
+
+                                <TextView
+                                    android:id="@+id/txtEscalationCreateCompliance1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/normal_bg"
+                                    android:backgroundTint="#00000000"
+                                    android:maxLength="50"
+                                    android:maxLines="1"
+                                    android:paddingLeft="5dp"
+                                    android:text="Select Manager"
+                                    android:textSize="16sp"
+                                    app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Escalation 2 "
+                                    android:textColor="#0A3383"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="*"
+                                    android:textColor="#FF0808"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rlSelectEscapsulationCreateCompliance2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/normal_bg"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp">
+
+                                <TextView
+                                    android:id="@+id/txtEscalationCreateCompliance2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/normal_bg"
+                                    android:backgroundTint="#00000000"
+                                    android:maxLength="50"
+                                    android:maxLines="1"
+                                    android:paddingLeft="5dp"
+                                    android:text="Select Manager"
+                                    android:textSize="16sp"
+                                    app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:weightSum="2">
+
+
+                        <Button
+                            android:id="@+id/btnReview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="#0A3383"
+                            android:text="Review"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

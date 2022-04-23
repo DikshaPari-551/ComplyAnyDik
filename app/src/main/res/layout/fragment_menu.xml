@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuFragments.MenuFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_home"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_home"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/menu"
+                android:textColor="@color/blue_1"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/companyManagement"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:layout_weight="0.08"
+                        android:src="@drawable/company" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.8"
+                        android:gravity="start"
+                        android:text="@string/company_management"
+                        android:textColor="#0A3383"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="2dp"
+                        tools:layout_editor_absoluteY="115dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/companyArrowLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:gravity="center"
+                        android:layout_marginEnd="15dp">
+
+                        <ImageView
+                            android:id="@+id/companyArrowRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrowright" />
+
+                        <ImageView
+                            android:id="@+id/companyArrowDown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrowdown"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/companyManagementMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/globalcompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/global_company"
+                            android:textColor="#0A3383"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#D2D6DE" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/regionalCompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/regional_company"
+                            android:textColor="#0A3383"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#D2D6DE" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/subRegionalcompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sub_regional_company"
+                            android:textColor="#0A3383"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#D2D6DE" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/countryCompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/country_company"
+                            android:textColor="#0A3383"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#D2D6DE" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/CountryRegionCompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/country_region_company"
+                            android:textColor="#0A3383"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#D2D6DE" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/entity"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/entity"
+                            android:textColor="#0A3383"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#D2D6DE" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/departmentManagement"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:layout_weight="0.08"
+                        android:src="@drawable/department" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.8"
+                        android:gravity="start"
+                        android:text="@string/department_management"
+                        android:textColor="#0A3383"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="2dp"
+                        tools:layout_editor_absoluteY="115dp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/departmentArrowLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:gravity="center"
+                        android:layout_marginEnd="15dp">
+
+                        <ImageView
+                            android:id="@+id/departmentArrowRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_arrowright" />
+
+                        <ImageView
+                            android:id="@+id/departmentArrowDown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrowdown"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/departmentManagementMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/department"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtDepartment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/department"
+                            android:textColor="#0A3383"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#D2D6DE" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/subDepartment"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtSubDepartment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sub_department"
+                            android:textColor="#0A3383"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#D2D6DE" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lawOrHeadManagement"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:layout_weight="0.08"
+                        android:src="@drawable/law" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.8"
+                        android:gravity="start"
+                        android:text="@string/law_or_head_management"
+                        android:textColor="#0A3383"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="2dp"
+                        tools:layout_editor_absoluteY="115dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/lawOrheadArrowLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:gravity="center"
+                        android:layout_marginEnd="15dp">
+
+                        <ImageView
+                            android:id="@+id/lawOrheadArrowRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrowright" />
+
+                        <ImageView
+                            android:id="@+id/lawOrheadArrowDown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrowdown"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lawOrHeadManagementMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/law"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/law_or_head"
+                            android:textColor="#0A3383"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#D2D6DE" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/subLawOrsubHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sub_law_or_sub_head"
+                            android:textColor="#0A3383"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#D2D6DE" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/calendarManagement"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="24dp"
+                        android:src="@drawable/calendarr"
+                        app:tint="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/txtCalenderManagement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="start"
+                        android:text="@string/calendar_management"
+                        android:textColor="#0A3383"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="2dp"
+                        tools:layout_editor_absoluteY="115dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#D2D6DE" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/userManagement"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:layout_weight="0.07"
+                        android:src="@drawable/users" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_weight="0.8"
+                        android:gravity="start"
+                        android:text="@string/user_management"
+                        android:textColor="#0A3383"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="2dp"
+                        tools:layout_editor_absoluteY="115dp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/userManagementArrowLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:gravity="center"
+                        android:layout_marginEnd="15dp">
+
+                        <ImageView
+                            android:id="@+id/userManagementArrowRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrowright" />
+
+                        <ImageView
+                            android:id="@+id/userManagementArrowDown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrowdown"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/userManagementMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/users"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/userId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/users"
+                            android:textColor="#0A3383"
+                            android:textSize="13sp"
+
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#D2D6DE" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/changeusers"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/changeUserId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/change_user"
+                            android:textColor="#0A3383"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#D2D6DE" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Proxyusers"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/proxyUserId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/proxy_user"
+                            android:textColor="#0A3383"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#D2D6DE" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/clientGroupManagement"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:layout_weight="0.08"
+                        android:src="@drawable/department" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.8"
+                        android:gravity="start"
+                        android:text="@string/client_group_management"
+                        android:textColor="#0A3383"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="2dp"
+                        tools:layout_editor_absoluteY="115dp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/clientGroupManagementArrowLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:gravity="center"
+                        android:layout_marginEnd="15dp">
+
+                        <ImageView
+                            android:id="@+id/clientGroupManagementArrowRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrowright" />
+
+                        <ImageView
+                            android:id="@+id/clientGroupManagementArrowDown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrowdown"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/clientGroupManagementMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/clientgroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/clientGroupId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/client_group"
+                            android:textColor="#0A3383"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#D2D6DE" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/clientSubGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/clientSubGroupId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/client_sub_group"
+                            android:textColor="#0A3383"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#D2D6DE" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ClientManagement"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:src="@drawable/users" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="start"
+                        android:text="@string/client_management"
+                        android:textColor="#0A3383"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="2dp"
+                        tools:layout_editor_absoluteY="115dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#D2D6DE" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/complianceManagement"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:layout_weight="0.08"
+                        android:src="@drawable/done" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_weight="0.8"
+                        android:gravity="start"
+                        android:text="@string/compliance_management"
+                        android:textColor="#0A3383"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="2dp"
+                        tools:layout_editor_absoluteY="115dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/complianceManagementArrowLayout"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/complianceManagementArrowRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrowright" />
+
+                        <ImageView
+                            android:id="@+id/complianceManagementArrowDown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrowdown"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/complianceManagementMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/StandardCompliance"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtStandardComplience"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/standard_compliance"
+                            android:textColor="#0A3383"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#D2D6DE" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/NewCompliance"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtNewCompliance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/new_compliance"
+                            android:textColor="#0A3383"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#D2D6DE" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/UpdateCompliance"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtUpdateComplaince"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/update_compliance"
+                            android:textColor="#0A3383"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#D2D6DE" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/helpAndSupport"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/support" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="start"
+                        android:text="@string/help_amp_support"
+                        android:textColor="#0A3383"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/ic_settings"
+                        app:tint="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/txtSettings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="start"
+                        android:text="@string/settings"
+                        android:textColor="#0A3383"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#D2D6DE" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="27dp"
+                        android:src="@drawable/logout" />
+
+                    <TextView
+                        android:id="@+id/txtLogOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="start"
+                        android:text="@string/logout"
+                        android:textColor="#0A3383"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#D2D6DE" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

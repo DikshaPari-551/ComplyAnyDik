@@ -1,0 +1,218 @@
+<resources>
+    <string name="app_name">ComplyAnyApp(Masoom)</string>
+    <string name="back">Back</string>
+    <string name="users">Users</string>
+    <string name="_29_6">29/6</string>
+    <string name="search">Search...</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="phone_number">Phone number</string>
+    <string name="email_address">Email Address</string>
+    <string name="user">User</string>
+    <string name="business_partner">Business Partner</string>
+    <string name="login">Login</string>
+    <string name="copyright_2021_comply_any_all_rights_reserved">Copyright @ 2021 Comply Any. All Rights Reserved</string>
+    <string name="enter_customer_code">Enter Customer Code</string>
+    <string name="enter_email">Enter Email Address</string>
+    <string name="enter_confirm_new_password">Enter Confirm New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="new_password">New Password</string>
+    <string name="enter_old_password">Enter Old Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="update">Update</string>
+    <string name="submit">Submit</string>
+    <string name="forget_password">Forgot Password?</string>
+    <string name="my_profile">My Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="password">Password</string>
+    <string name="profile">Profile</string>
+    <string name="first_name">First Name</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="address">Address</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email">Email</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="complyany_support">ComplyAny | Support</string>
+    <string name="_0_25">0/25</string>
+
+
+    // added vishal's String resources
+    <string name="register_email_notification">Register Email Notification</string>
+    <string name="user_name">User Name</string>
+    <string name="enter_user_name">
+<font size="15">Enter User Name</font>
+</string>
+    <string name="star">*</string>
+    <string name="enter_email_id">
+<font size="15">Enter Email ID</font>
+</string>
+    <string name="email_id">Email ID</string>
+    <string name="entity_name">Entity Name</string>
+    <string name="select_entity_name">
+<font size="15">Select Entity Name</font>
+</string>
+    <string name="regulations">Regulations</string>
+    <string name="testing">testing</string>
+    <string name="select_country">
+<font size="10">Select Country</font>
+</string>
+    <string name="ram">ram</string>
+    <string name="stock_exchange">Stock Exchange</string>
+    <string name="labour_law">Labour Law</string>
+    <string name="central_bank">Central Bank</string>
+    <string name="customs_law">Customs Law</string>
+    <string name="corporate_law">Corporate Law</string>
+    <string name="excise_duty">Excise Duty</string>
+    <string name="income">INCOME</string>
+    <string name="goods_amp_services">
+<![CDATA[ Goods & Services ]]>
+</string>
+
+    <string name="menu">Menu</string>
+
+    // added string for configure standard
+    <string name="save">Save</string>
+    <string name="next">Next</string>
+    <string name="entity_name_standard">Entity Name *</string>
+    <string name="select_country_office">Select Country Office</string>
+    <string name="country_office">Country Office *</string>
+    <string name="global_sub_region">Global Sub-Region *</string>
+    <string name="global_region">Global Region *</string>
+    <string name="applicable_laws">Applicable Laws</string>
+    <string name="assign_user_and_department">Assign User And Department</string>
+    <string name="income_tax_assign_user">Income Tax *</string>
+    <string name="select">Select</string>
+    <string name="goods_and_service_tax">Goods And Service Tax *</string>
+    <string name="companies_act">Companies Act *</string>
+    <string name="provident_fund_act">Provident Fund Act *</string>
+    <string name="employees_state_insurance">Employees State Insurance *</string>
+    <string name="generate_complience">Generate Complience</string>
+    <string name="sub_law_or_head">Sub-Law or Head</string>
+    <string name="view_reports"><font size="16">View Reports</font></string>
+    <string name="global_trend">Global Trend</string>
+    <string name="compliant">Compliant</string>
+    <string name="non_compliant">Non-Compliant</string>
+    <string name="critical">Critical</string>
+    <string name="non_critical">Non-Critical</string>
+    <string name="department">Department</string>
+    <string name="all">All</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="finance">Finance</string>
+    <string name="human_resources_and_administration">Human-Resources and Administration</string>
+    <string name="select_entity_to_view_calender">Select Entity to View Calender</string>
+    <string name="entity_to_view_calender">Entity to View Calender</string>
+
+    <string-array name="numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="compliance_options">
+        <item>All</item>
+        <item>Compliant</item>
+        <item>Non-Compliant</item>
+        <item>Critical</item>
+        <item>Non-Critical</item>
+    </string-array>
+
+    <string name="terms_of_use_1">
+        1. SCOPE OF AGREEMENT This Terms of Use Agreement ("Agreement") by and between the Project Management Institute
+            ("we", "us", "our" or "PMI") and you ("you" , "your" or "User") governs your use of the www.pmi.org web site ("Site")
+            together with all information, content, products, materials and services made available to you through the same by us and/or
+            third parties (which together with the Site shall be collectively referred to as the "Services"). By using or otherwise
+            accessing the Services, or any component thereof, in any manner whatsoever, you agree to be bound by and comply with the terms
+            and conditions of this Agreement. If you do not agree to this Agreement, do not access or use the Services in any manner.
+            When we refer to the "use" of the Services in this Agreement, we mean any actual or attempted access or use of the Services,
+            including, without limitation, any transmission, exchange of information or communication associated with the Services.
+            These terms and conditions, together with the other terms of use applicable to other PMI-owned or controlled web sites and
+            any other policies, rules and provisions which are described, linked or otherwise referred to and form a part of this Agreement,
+            including, without limitation our Privacy Policy, constitute the entire agreement between you and us, superseding any and all
+            prior or inconsistent understandings, representations or agreements regarding the Services. PMI reserves the right to modify the
+            terms of this Agreement at any time, and will post a notice of such changes. The changes become effective immediately upon posting
+            (the "Effective Date"). If any change to the Agreement is not acceptable to you, you must stop using the Services. Your use of the
+            Services after the Effective Date shall constitute your acceptance of such changes. If we make any new products or services
+            available, they will be considered a part of the Services and your use of them will be governed by the terms and conditions of
+            this Agreement unless we notify you that different terms and conditions apply. You must also comply with any additional terms
+            which apply to third-party content, material, information, software or other services.
+    </string>
+
+    <string name="terms_of_use_2">
+        2. OTHER INTERACTIVE MEDIA In connection with your use of the Services, you may have access to and use of discussion groups, chat
+        rooms, message boards, blogs, virtual communities, wikis and other collaborative websites, and other interactive functionality
+        ("Interactive Services"). If you participate in or use any Interactive Services, you are responsible for User Content you upload,
+        post, link to or otherwise transmit (collectively "transmit") and the consequences thereof. If you choose to transmit any User Content
+        using such Interactive Services, you agree that you own or have a license to post the User Content to the Site and do so solely for
+        lawful purposes and in compliance with all applicable laws. You expressly agree that we have no responsibility for or control over
+        the User Content you may transmit using these Interactive Services. Additionally, we do not represent, warrant or guarantee the
+        truthfulness, accuracy, quality, or reliability of any of the User Content posted, displayed, linked to or otherwise transmitted via
+        any Interactive Services. We also do not endorse any opinions expressed in or through any Interactive Services. You agree that you
+        must evaluate, and bear all risks associated with, the use of any User Content, including any reliance on the accuracy, completeness,
+        or usefulness of such User Content. Although we do not actively monitor, regulate or pre-screen your use of the Services, we reserve
+        the unconditional right (but not the obligation) to remove, move or edit any User Content we consider in our sole discretion to be
+        harmful, offensive, disruptive, in violation of law, regulation or any agreement, including, without limitation, which is or may be
+        in violation of this Agreement. We have no liability or responsibility to you or any other person or entity for performance or
+        nonperformance of such monitoring activities. Additionally, you agree to: not post, email, upload, transmit or otherwise make
+        available any content that is unlawful, harmful, threatening, abusive, harassing, tortious, defamatory, vulgar, obscene, libelous,
+        invasive of another\'s privacy, hateful, or racially, ethnically or otherwise objectionable; not impersonate any person or entity;
+        not post, email, upload, transmit or otherwise make available any content that harms minors in any way; not forge headers or
+        otherwise manipulate identifiers in order to disguise the origin of any User Content transmitted through the Site; not post, email,
+        upload, transmit or otherwise make available any content that you do not have a right to make available under any law or under
+        contractual or fiduciary relationships (such as inside information, proprietary and confidential information learned or disclosed
+        as part of employment relationships or under nondisclosure agreements); not post, email, upload, transmit or otherwise make
+        available any content that infringes the intellectual property rights of any party; not post, email, upload, transmit or otherwise
+        make available any content comprising any unsolicited or unauthorized advertising, promotional materials, "junk mail," "spam," "chainletters,"
+        "pyramid schemes," or any other form of commercial solicitation; not post, email, upload, transmit or otherwise make
+        available any content comprising any material that contains software viruses or any other computer code, files or programs designed
+        to interrupt, destroy or limit the functionality of any computer software or hardware or telecommunications equipment; not disrupt
+        the normal flow of dialogue, cause a screen to "scroll" faster than other users of the Site are able to type, or otherwise act in a
+        manner that negatively affects other users\' ability to engage in real-time exchanges; not interfere with or disrupt the Site or
+        servers or networks connected to the Site, or disobey any requirements, procedures, policies or regulations of networks connected
+        to the Site; not intentionally or unintentionally violate any applicable local, state, national or international law; not provide
+        material support or resources (or to conceal or disguise the nature, location, source, or ownership of material support or resources)
+        to any organization(s) designated by the United States government as a foreign terrorist organization pursuant to section 219 of the
+        Immigration and Nationality Act; not "stalk" or otherwise harass any person; not collect or store personal data about other users;
+        or, not advertise or solicit anyone to buy or sell products or to make donations of any kind absent prior written approval from PMI,
+        as set forth in more detail in Section 6 below. not to make negative or disparaging references to PMI, its services or its members or
+        otherwise compare PMI, its services or its members unfavorably to others
+    </string>
+    <string name="policy"><font size="17">policy.</font></string>
+    <string name="terms_of_use"><font size="17">terms of use</font></string>
+    <string name="by_signing_in_you_agree_to_our"><font size="17">By Signing in, you agree to our  </font></string>
+    <string name="preference_file_name">ComplyAnyMasoom</string>
+    <string name="logout">Logout</string>
+    <string name="settings">Settings</string>
+    <string name="help_amp_support"><![CDATA[Help & Support]]></string>
+    <string name="update_compliance">Update Compliance</string>
+    <string name="new_compliance">New Compliance</string>
+    <string name="standard_compliance">Standard Compliance</string>
+    <string name="compliance_management">Compliance Management</string>
+    <string name="client_management">Client Management</string>
+    <string name="client_sub_group">Client Sub-Group</string>
+    <string name="client_group">Client Group</string>
+    <string name="client_group_management">Client Group Management</string>
+    <string name="proxy_user">Proxy User</string>
+    <string name="change_user">Change User</string>
+    <string name="user_management">User Management</string>
+    <string name="calendar_management">Calendar Management</string>
+    <string name="sub_law_or_sub_head">sub-Law or Sub-Head</string>
+    <string name="law_or_head">Law or Head</string>
+    <string name="law_or_head_management">Law or Head Management</string>
+    <string name="sub_department">Sub-Department</string>
+    <string name="department_management">Department Management</string>
+    <string name="entity">Entity</string>
+    <string name="country_region_company">Country Region Company</string>
+    <string name="country_company">Country Company</string>
+    <string name="sub_regional_company">Sub-Regional Company</string>
+    <string name="regional_company">Regional Company</string>
+    <string name="global_company">Global Company</string>
+    <string name="company_management">Company Management</string>
+
+</resources>

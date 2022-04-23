@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/dashboard"
+        android:title="Home"
+        android:icon="@drawable/home"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/reports"
+        android:title="Reports"
+
+        android:icon="@drawable/reports"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/post"
+        android:icon="@drawable/post"
+        android:title="Post"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/notify"
+        android:icon="@drawable/notification"
+        android:title="Notification"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/Menu"
+        android:icon="@drawable/ic_menu"
+        android:title="Menu"
+        app:showAsAction="ifRoom"/>
+</menu>

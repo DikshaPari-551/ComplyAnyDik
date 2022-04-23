@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ResourceManagementActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:paddingHorizontal="8dp">
+
+            <TextView
+                android:id="@+id/toolbarBackIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_back_arrow"
+                app:drawableTint="@color/blue" />
+
+            <TextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="Resource Management"
+                android:textColor="@color/blue"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/toolbar"
+            android:background="@color/grey" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/selectNatureType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/normal_bg"
+                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    android:hint="Select Nature Type"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/selectLawType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/normal_bg"
+                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    android:hint="Select Law Type"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/selectCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/normal_bg"
+                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    android:hint="Select Country"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/selectState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/normal_bg"
+                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    android:hint="Select State"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="5dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

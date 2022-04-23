@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ConfigureStandardActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="top"
+        android:background="@color/white"
+        android:paddingHorizontal="8dp">
+
+        <TextView
+            android:id="@+id/backStandardComplience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="center_vertical"
+            android:text="@string/back"
+            android:textColor="@color/blue"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_back_arrow"
+            app:drawableTint="@color/blue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="Confiqure Standard"
+            android:textColor="@color/blue"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+
+            <!--added Configure Standard Compilance xml-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="Confiqure Standard Compilance"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/grey"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="15dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/global_region"
+                        android:textColor="@color/blue"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlSelectGlobalRegion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/backgroundsearch"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:id="@+id/txtGlobalRegion"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:text="Select Global Region"
+                            android:textSize="18sp"
+                            app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/global_sub_region"
+                        android:textColor="@color/blue"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlSelectGlobalSubRegion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/backgroundsearch"
+                        android:paddingLeft="8dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:id="@+id/txtGlobalSubRegion"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:text="Select Global Sub-Region"
+                            android:textSize="18sp"
+                            app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/country_office"
+                        android:textColor="@color/blue"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlCountyOffice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/backgroundsearch"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:id="@+id/txtCountyOffice"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:text="@string/select_country_office"
+                            android:textSize="18sp"
+                            app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/entity_name_standard"
+                    android:textColor="@color/blue"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlEntityName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/backgroundsearch"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:id="@+id/txtEntityName"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:text="Select Entity Name"
+                            android:textSize="18sp"
+                            app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnSaveStandardCompilance"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:text="@string/save"
+                            android:textAllCaps="false"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:textSize="12sp"/>
+
+                        <Button
+                            android:id="@+id/btnNextStandardCompilance"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/next"
+                            android:textAllCaps="false"
+                            android:background="@drawable/backgroundsearch"
+                            android:textSize="12sp"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        <!--added Applicable law xml-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/applicable_laws"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/grey"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvAppilicableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                app:cardCornerRadius="10dp"
+                android:visibility="gone"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Income Tax *"
+                        android:textColor="@color/blue"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectIncomeTax1"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginEnd="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtIncomeTax1"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:text="Select"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectIncomeTax2"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginStart="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtSelectIncomeTax2"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:text="Select"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectIncomeTax3"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginStart="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtSelectIncomeTax3"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:text="Select"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Goods And Service Tax *"
+                        android:textColor="@color/blue"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectGoodsAndService1"
+                            android:layout_width="165dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginEnd="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtGoodsAndService1"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:text="Select"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectGoodsAndService2"
+                            android:layout_width="165dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginStart="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtGoodsAndService2"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:text="Select"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Labour Law *"
+                        android:textColor="@color/blue"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlSelectLabourLaw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/backgroundsearch"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:id="@+id/txtLabourLaw"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_centerVertical="true"
+                            android:text="Select Labour Law"
+                            android:gravity="center_vertical"
+                            android:textSize="18sp"
+                            app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Corporate Law *"
+                        android:textColor="@color/blue"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlSelectCorporateLaw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/backgroundsearch"
+                        android:paddingLeft="8dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:id="@+id/txtCorporateLaw"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_centerVertical="true"
+                            android:text="Select Corporate Law"
+                            android:gravity="center_vertical"
+                            android:textSize="18sp"
+                            app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="State Professional Tax"
+                        android:textColor="@color/blue"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlSelectStateProfessionalTax"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/backgroundsearch"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:id="@+id/txtSelectStateProfessionalTax"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_centerVertical="true"
+                            android:text="Select State Professional Tax"
+                            android:gravity="center_vertical"
+                            android:textSize="18sp"
+                            app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                    </RelativeLayout>
+
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnSaveApplicableLaws"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:text="@string/save"
+                            android:textAllCaps="false"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:textSize="12sp"/>
+
+                        <Button
+                            android:id="@+id/btnNextApplicableLaws"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/next"
+                            android:textAllCaps="false"
+                            android:background="@drawable/backgroundsearch"
+                            android:textSize="12sp"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--added Assign User And Department xml-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/assign_user_and_department"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/grey"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvAssignUserLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/income_tax_assign_user"
+                        android:textColor="@color/blue"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectIncomeTax11"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginEnd="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtIncomeTax11"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:text="@string/select"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectIncomeTax12"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginStart="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtSelectIncomeTax12"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:text="@string/select"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectIncomeTax13"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginStart="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtSelectIncomeTax13"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:text="@string/select"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/goods_and_service_tax"
+                        android:textColor="@color/blue"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectGoodsAndService111"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginEnd="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtGoodsAndService11"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:text="@string/select"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectGoodsAndService12"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginStart="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtGoodsAndService12"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:text="@string/select"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectGoodsAndService13"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginStart="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtGoodsAndService13"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:text="@string/select"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/companies_act"
+                        android:textColor="@color/blue"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectCompaniesAct1"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginEnd="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtSelectCompaniesAct1"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:text="@string/select"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectCompaniesAct2"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginStart="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtSelectCompaniesAct2"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:text="@string/select"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectCompaniesAct3"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginStart="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtSelectCompaniesAct3"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:text="@string/select"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/provident_fund_act"
+                        android:textColor="@color/blue"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectProfidentFundAct1"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginEnd="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtSelectProfidentFundAct1"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:text="@string/select"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectProfidentFundAct2"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginStart="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtSelectProfidentFundAct2"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:text="@string/select"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectProfidentFundAct3"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginStart="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtSelectProfidentFundAct3"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:text="@string/select"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/employees_state_insurance"
+                        android:textColor="@color/blue"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectEmployeesStateInsurance1"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginEnd="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtSelectEmployeesStateInsurance1"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:text="@string/select"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectEmployeesStateInsurance2"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginStart="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtSelectEmployeesStateInsurance2"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:text="@string/select"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlSelectEmployeesStateInsurance3"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsearch"
+                            android:paddingLeft="8dp"
+                            android:layout_marginStart="5dp"
+                            android:paddingTop="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/txtSelectEmployeesStateInsurance3"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:text="@string/select"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnBackAssignUserAndDepartment"
+                            android:layout_width="75dp"
+                            android:layout_height="45dp"
+                            android:text="Back"
+                            android:textAllCaps="false"
+                            android:background="@drawable/backgroundsearch"
+                            android:textSize="11sp"/>
+
+                        <Button
+                            android:id="@+id/btnSaveAssignUserAndDepartment"
+                            android:layout_width="75dp"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="5dp"
+                            android:text="Save"
+                            android:textAllCaps="false"
+                            android:background="@drawable/backgroundsearch"
+                            android:textSize="11sp"/>
+
+                        <Button
+                            android:id="@+id/btnGenerateCompilance"
+                            android:layout_width="185dp"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/generate_complience"
+                            android:textAllCaps="false"
+                            android:background="@drawable/backgroundsearch"
+                            android:textSize="13sp"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
