@@ -29,7 +29,7 @@ class CreateClientGroupActivity : AppCompatActivity() {
         SaveButton.setOnClickListener{
 
             if (ClientGroupManagement.text.toString().isEmpty()){
-                tv_ClientGroup.text = "*Please enter Client Group Name"
+                tv_ClientGroup.text = "Required"
             }
             else {
                 tv_ClientGroup.text = ""

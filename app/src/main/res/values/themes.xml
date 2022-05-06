@@ -14,16 +14,23 @@
         <!-- Customize your theme here. -->
     </style>
 
-    // adding custom style for tab_layout
+    // adding custom style for tab_layout for login
     <style name="CustomTabLayout" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">15sp</item>
         <item name="textAllCaps">false</item>
         <item name="android:textStyle">bold</item>
     </style>
 
+    // adding custom style for tab_layout for subscrpition
+    <style name="CustomTabLayout1" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">13sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
     // date picker
     <style name="DatePickerTheme" parent="ThemeOverlay.AppCompat.Dialog">
-        <item name="colorAccent">@color/teal_200</item>
+        <item name="colorAccent">@color/blue</item>
     </style>
 
 </resources>

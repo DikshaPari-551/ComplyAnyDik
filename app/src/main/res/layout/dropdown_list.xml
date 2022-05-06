@@ -5,9 +5,9 @@
     android:text="My Text"
     android:textStyle="italic"
     android:textColor="@color/black"
-    android:paddingStart="@dimen/_7mdp"
+    android:paddingStart="3dp"
     android:paddingTop="@dimen/_5mdp"
-    android:textSize="@dimen/_15font_mdp"
+    android:textSize="20sp"
     >
 
 </TextView>

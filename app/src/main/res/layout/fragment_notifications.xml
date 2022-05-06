@@ -45,7 +45,6 @@
 
 
     <EditText
-        android:paddingStart="5dp"
         android:id="@+id/searchNotificationBar"
         android:layout_width="match_parent"
         android:layout_height="45dp"
@@ -56,14 +55,19 @@
         android:drawableStart="@drawable/ic_search"
         android:drawablePadding="5dp"
         android:hint="@string/search"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:paddingStart="5dp"
+        android:singleLine="true"
         tools:ignore="RtlSymmetry" />
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewNotification"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/searchNotificationBar"
-        android:id="@+id/recyclerViewNotification"/>
+        android:layout_below="@id/searchNotificationBar" />
 
 
 </RelativeLayout>

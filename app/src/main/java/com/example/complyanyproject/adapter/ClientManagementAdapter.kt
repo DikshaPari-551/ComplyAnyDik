@@ -1,13 +1,17 @@
 package com.example.complyanyproject.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.complyanyproject.R
+import com.example.complyanyproject.activity.CreateCalenderManagementActivity
 import com.example.complyanyproject.interfaces.OnRecyclerClickListener
 import com.example.complyanyproject.model.ClientManagementModelClass
 
@@ -31,10 +35,18 @@ class ClientManagementAdapter(val context: Context, val itemList : ArrayList<Cli
         holder.itemEmail.text = userData.emailId
         holder.itemMobile.text = userData.mobileNo
 
-
         holder.layout.setOnClickListener {
             onRvClickListener.onClick(position)
         }
+
+        holder.imgEdit.setOnClickListener {
+            Toast.makeText(context, "Clicked on edit button", Toast.LENGTH_SHORT).show()
+        }
+
+        holder.imgDelete.setOnClickListener {
+            Toast.makeText(context, "Clicked on delete button", Toast.LENGTH_SHORT).show()
+        }
+
     }
 
     override fun getItemCount(): Int {
@@ -52,6 +64,8 @@ class ClientManagementAdapter(val context: Context, val itemList : ArrayList<Cli
         val itemEmail = view.findViewById<TextView>(R.id.itemEmail)
         val itemMobile = view.findViewById<TextView>(R.id.itemMobile)
         val layout = view.findViewById<CardView>(R.id.layout)
+        val imgEdit = view.findViewById<ImageView>(R.id.imgEdit)
+        val imgDelete = view.findViewById<ImageView>(R.id.imgDelete)
 
     }
 

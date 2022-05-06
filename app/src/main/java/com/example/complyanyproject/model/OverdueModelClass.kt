@@ -6,5 +6,6 @@ data class OverdueModelClass (
         val nature:String,
         val period:String,
         val dueDate:String,
+        val calender:String,
         val remarks:String
 )

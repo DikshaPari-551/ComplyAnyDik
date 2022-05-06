@@ -7,5 +7,7 @@ data class CompletedModelClass(
     val nature:String,
     val period:String,
     val dueDate:String,
+    val calender:String,
+
     val remarks:String
 )

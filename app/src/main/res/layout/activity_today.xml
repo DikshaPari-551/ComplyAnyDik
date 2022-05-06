@@ -62,8 +62,10 @@
         android:drawableLeft="@drawable/ic_search"
         android:layout_marginHorizontal="15dp"
         android:padding="10dp"
+        android:maxLength="50"
         android:maxLines="1"
-        android:maxLength="20"
+        android:singleLine="true"
+        android:inputType="text"
         android:textSize="15sp"
         android:hint="Search"/>
 

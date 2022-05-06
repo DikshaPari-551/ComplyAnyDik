@@ -1,7 +1,9 @@
 package com.example.complyanyproject.MenuFragments
 
 import android.app.DatePickerDialog
+import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -23,14 +25,14 @@ class PostsFragment : Fragment() {
     lateinit var FromdateTextView: TextView
     lateinit var TodateTextView: TextView
 
-    lateinit var FromdateImageView: ImageView
-    lateinit var TodateImageView: ImageView
+    lateinit var FromdateImageView:RelativeLayout
+    lateinit var TodateImageView:RelativeLayout
 
-    lateinit var overDueLayout: RelativeLayout
-    lateinit var todayLayout : RelativeLayout
-    lateinit var thisMonthLayout : RelativeLayout
-    lateinit var upcomingLayout: RelativeLayout
-    lateinit var completedLayout : RelativeLayout
+    lateinit var overDueLayout: TextView
+    lateinit var todayLayout : TextView
+    lateinit var thisMonthLayout : TextView
+    lateinit var upcomingLayout: TextView
+    lateinit var completedLayout : TextView
 
 
     override fun onCreateView(
@@ -39,11 +41,11 @@ class PostsFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_posts, container, false)
-        overDueLayout = view.findViewById(R.id.OverDueLayout)
-        todayLayout = view.findViewById(R.id.todayLayout)
-        thisMonthLayout = view.findViewById(R.id.thisMonthLayout)
-        upcomingLayout = view.findViewById(R.id.upcomingLayout)
-        completedLayout = view.findViewById(R.id.completedLayout)
+        overDueLayout = view.findViewById(R.id.overDue)
+        todayLayout = view.findViewById(R.id.today)
+        thisMonthLayout = view.findViewById(R.id.thisMonth)
+        upcomingLayout = view.findViewById(R.id.upcoming)
+        completedLayout = view.findViewById(R.id.completed)
 
 
         // added clicks on list items
@@ -78,14 +80,16 @@ class PostsFragment : Fragment() {
         FromdateTextView = view.findViewById(R.id.from_date_Text)
         TodateTextView = view.findViewById(R.id.to_date_Text)
 
+
+
         FromdateImageView = view.findViewById(R.id.from_date_ImageView)
         TodateImageView = view.findViewById(R.id.to_date_ImageView)
 
-
-        val calendar: Calendar = Calendar.getInstance()
-        val year = calendar.get(Calendar.YEAR)
+/*
+       val calendar: Calendar = Calendar.getInstance()
+      val year = calendar.get(Calendar.YEAR)
         val month = calendar.get(Calendar.MONTH)
-        val date = calendar.get(Calendar.DAY_OF_MONTH)
+       val date = calendar.get(Calendar.DAY_OF_MONTH)
 
         FromdateTextView.text = "$date-${month + 1}-$year"
 
@@ -104,8 +108,55 @@ class PostsFragment : Fragment() {
             }
 
             datePickerDialog?.show()
+        }*/
+
+
+        val myCalendar = Calendar.getInstance()
+        var day = myCalendar.get(Calendar.DAY_OF_MONTH)
+        var year = myCalendar.get(Calendar.YEAR)
+        var month = myCalendar.get(Calendar.MONTH)
+     //   FromdateTextView.setTextColor(Color.parseColor("#000000"))
+
+     //  var datePicker = DatePickerDialog(activity as Context)
+
+        FromdateImageView.setOnClickListener {
+
+            FromdateTextView.setTextColor(Color.parseColor("#000000"))
+
+            var datePicker = DatePickerDialog(activity as Context, R.style.DatePickerTheme,
+                { view, year, month, dayOfMonth -> // adding the selected date in the edittext
+                    FromdateTextView.setText(dayOfMonth.toString() + "/" + (month + 1) + "/" + year)
+                }, year, month, day
+
+            )
+            datePicker!!.getDatePicker().setMinDate(myCalendar.getTimeInMillis())
+
+            // show the dialog
+            datePicker!!.show()
+
+
         }
 
+
+        TodateImageView.setOnClickListener {
+
+            TodateTextView.setTextColor(Color.parseColor("#000000"))
+
+            var datePicker = DatePickerDialog(activity as Context, R.style.DatePickerTheme,
+                { view, year, month, dayOfMonth -> // adding the selected date in the edittext
+                    TodateTextView.setText(dayOfMonth.toString() + "/" + (month + 1) + "/" + year)
+                }, year, month, day
+
+            )
+            datePicker!!.getDatePicker().setMinDate(myCalendar.getTimeInMillis())
+
+            // show the dialog
+            datePicker!!.show()
+
+
+        }
+
+/*
         TodateImageView.setOnClickListener {
 
             val datePickerDialog = activity?.let { it1 ->
@@ -119,7 +170,7 @@ class PostsFragment : Fragment() {
             }
 
             datePickerDialog?.show()
-        }
+        }*/
 
         return view
     }

@@ -62,7 +62,6 @@
 
 
     <EditText
-        android:paddingStart="5dp"
         android:id="@+id/searchBar"
         android:layout_width="match_parent"
         android:layout_height="45dp"
@@ -72,7 +71,12 @@
         android:background="@drawable/rounded_edit_text"
         android:drawableStart="@drawable/ic_search"
         android:drawablePadding="5dp"
-        android:hint="@string/search" />
+        android:hint="@string/search"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:paddingStart="5dp"
+        android:singleLine="true" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

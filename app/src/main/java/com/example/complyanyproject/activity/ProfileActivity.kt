@@ -6,6 +6,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Patterns
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.complyanyproject.databinding.ActivityProfileBinding
@@ -13,26 +14,14 @@ import java.io.IOException
 
 class ProfileActivity : AppCompatActivity() {
 
-
     private lateinit var binding: ActivityProfileBinding
     val SELECT_REQUEST_CODE = 1
-//    var flag1 = false
-//    var flag2 = false
-//    var flag3 = false
-//    var flag4 = false
-//    var validateVariable = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
-
-//        setFirstNameFocusChangeListener()
-//        setLastNameFocusChangeListener()
-//        setEmailFocusChangeListener()
-//        setMobileNumberFocusChangeListener()
 
         binding.btnUpate.setOnClickListener {
 
@@ -42,30 +31,103 @@ class ProfileActivity : AppCompatActivity() {
                 val mobileNumber = binding.etMobileNumber.text.toString()
 
                 if (firstName.isEmpty()){
-                    binding.etFirstName.setError("This field is required")
+                    binding.txtFirstName.visibility = View.VISIBLE
+                    binding.txtFirstName.text = "*Please enter first name"
+                    binding.txtLastName.text=""
+                    binding.txtEmail.text=""
+                    binding.txtPhone.text=""
+                    binding.etFirstName.requestFocus()
                 }
                 else if(firstName.length < 2){
-                    binding.etFirstName.setError("First name contains atleast 2 characters")
+                    binding.txtFirstName.text = "*First name contains atleast 2 characters"
+                  //  binding.txtFirstName.text = "*Please enter first name"
+                    binding.txtLastName.text=""
+                    binding.txtEmail.text=""
+                    binding.txtPhone.text=""
+                    binding.etFirstName.requestFocus()
+
                 }
                 else if (lastName.isEmpty()){
-                    binding.etLastName.setError("This field is required")
+                    binding.txtLastName.visibility = View.VISIBLE
+                    binding.txtLastName.text = "*Please enter last name"
+                    binding.txtFirstName.text = ""
+                  //  binding.txtLastName.text=""
+                    binding.txtEmail.text=""
+                    binding.txtPhone.text=""
+                    binding.etLastName.requestFocus()
+
                 }
                 else if (lastName.length < 2){
-                    binding.etLastName.setError("Last name contains atleast 2 characters")
+                    binding.txtLastName.text = "*Last name contains atleast 2 characters"
+                    binding.txtFirstName.text = ""
+                   // binding.txtLastName.text=""
+                    binding.txtEmail.text=""
+                    binding.txtPhone.text=""
+                    binding.etLastName.requestFocus()
+
                 }
                 else if (lastName == firstName){
-                    binding.etLastName.setError("Last name must be diffrerent")
+                    binding.txtLastName.text = "*Last name must be different"
+                    binding.txtFirstName.text = ""
+                   // binding.txtLastName.text=""
+                    binding.txtEmail.text=""
+                    binding.txtPhone.text=""
+                    binding.etLastName.requestFocus()
+
                 }
                 else if (email.isEmpty()){
-                    binding.etEmail.setError("This field is required")
+                    binding.txtEmail.visibility = View.VISIBLE
+                    binding.txtEmail.text = "*Please enter email address"
+                    binding.txtFirstName.text = ""
+                    binding.txtLastName.text=""
+                    binding.txtPhone.text=""
+                    binding.etEmail.requestFocus()
+
                 }
                 else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-                    binding.etEmail.setError("Please enter valid email")
+                    binding.txtEmail.text = "*Please enter valid email"
+                    binding.etEmail.requestFocus()
+                    binding.txtFirstName.text = ""
+                    binding.txtLastName.text=""
+                   // binding.txtEmail.text=""
+                    binding.txtPhone.text=""
+
+                }
+                else if(mobileNumber.isEmpty()){
+                    binding.txtPhone.visibility = View.VISIBLE
+                    binding.txtPhone.text = "*Please enter mobile number"
+                    binding.txtFirstName.text = ""
+                    binding.txtLastName.text=""
+                    binding.txtEmail.text=""
+             //       binding.txtPhone.text=""
+                    binding.etMobileNumber.requestFocus()
+
                 }
                 else if(mobileNumber.length < 10){
-                    binding.etMobileNumber.setError("Please enter valid number")
+                    binding.txtPhone.visibility = View.VISIBLE
+                    binding.txtPhone.text = "*Please enter valid number"
+                    binding.txtFirstName.text = ""
+                    binding.txtLastName.text=""
+                    binding.txtEmail.text=""
+                //    binding.txtPhone.text=""
+                    binding.etMobileNumber.requestFocus()
+
                 }
                 else{
+
+                    // hide tv texts
+                    binding.txtFirstName.visibility = View.GONE
+                    binding.txtLastName.visibility = View.GONE
+                    binding.txtEmail.visibility = View.GONE
+                    binding.txtPhone.visibility = View.GONE
+
+                    // remove texts of tv texts
+                    binding.txtFirstName.text = ""
+                    binding.txtLastName.text = ""
+                    binding.txtEmail.text = ""
+                    binding.txtPhone.text = ""
+
+                    // remove texts from edit text
                     binding.etFirstName.text.clear()
                     binding.etLastName.text.clear()
                     binding.etEmail.text.clear()
@@ -77,6 +139,7 @@ class ProfileActivity : AppCompatActivity() {
         }
 
 
+        // added image picker code
         binding.imageIcon.setOnClickListener {
             val galleryIntent = Intent(
                 Intent.ACTION_PICK,
@@ -99,8 +162,11 @@ class ProfileActivity : AppCompatActivity() {
 
     }
 
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
+
+        // added image in image view
         if (resultCode == Activity.RESULT_CANCELED) {
             return
         }

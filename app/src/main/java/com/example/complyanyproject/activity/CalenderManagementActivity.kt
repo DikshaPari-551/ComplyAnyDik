@@ -2,6 +2,7 @@ package com.example.complyanyproject.activity
 
 import android.app.Activity
 import android.content.Intent
+import android.hardware.biometrics.BiometricManager
 import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

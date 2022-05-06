@@ -99,62 +99,42 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="5dp"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginVertical="5dp"
                         android:orientation="horizontal"
-                        android:weightSum="10">
+                        android:weightSum="10"
+                        android:layout_gravity="center_horizontal">
 
-                        <AutoCompleteTextView
-                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        <RelativeLayout
                             android:layout_width="wrap_content"
-                            android:layout_height="32dp"
-                            android:layout_marginEnd="8dp"
+                            android:layout_height="40dp"
                             android:layout_weight="5"
-                            android:background="@drawable/edittext_border_1"
-                            android:paddingStart="8dp"
-                            android:paddingEnd="10dp"
-                            android:textColor="@color/black"
-                            app:drawableEndCompat="@drawable/ic_dropdown_arrow"
-                            android:drawableTint="@color/black"/>
+                            android:layout_marginEnd="3dp"
+                            android:background="@drawable/cardview_edittext">
 
-                        <AutoCompleteTextView
-                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="-10dp"
+                                android:spinnerMode="dropdown" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
                             android:layout_width="wrap_content"
-                            android:layout_height="32dp"
-                            android:layout_marginEnd="8dp"
+                            android:layout_height="40dp"
                             android:layout_weight="5"
-                            android:background="@drawable/edittext_border_1"
-                            android:paddingStart="8dp"
-                            android:paddingEnd="10dp"
-                            android:textColor="@color/black"
-                            app:drawableEndCompat="@drawable/ic_dropdown_arrow"
-                            android:drawableTint="@color/black"/>
+                            android:background="@drawable/cardview_edittext">
 
-<!--                        <TextView-->
-<!--                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="35dp"-->
-<!--                            android:layout_marginEnd="8dp"-->
-<!--                            android:layout_weight="5"-->
-<!--                            android:background="@drawable/edittext_border_1"-->
-<!--                            android:paddingStart="8dp"-->
-<!--                            android:paddingEnd="10dp"-->
-<!--                            android:textColor="@color/black"-->
-<!--                            app:drawableEndCompat="@drawable/ic_dropdown_arrow" />-->
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="-10dp"
+                                android:entries="@array/dashboard_options"
+                                android:spinnerMode="dropdown" />
 
-<!--                        <TextView-->
-<!--                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="35dp"-->
-<!--                            android:layout_gravity="center_vertical"-->
-<!--                            android:layout_weight="5"-->
-<!--                            android:background="@drawable/edittext_border_1"-->
-<!--                            android:gravity="center_vertical"-->
-<!--                            android:paddingStart="8dp"-->
-<!--                            android:paddingEnd="10dp"-->
-<!--                            android:text="@string/all"-->
-<!--                            android:textColor="@color/black"-->
-<!--                            android:textSize="12sp"-->
-<!--                            app:drawableEndCompat="@drawable/ic_dropdown_arrow" />-->
+                        </RelativeLayout>
 
                     </LinearLayout>
 
@@ -230,7 +210,8 @@
                     <com.github.mikephil.charting.charts.BarChart
                         android:id="@+id/barChart1"
                         android:layout_width="match_parent"
-                        android:layout_height="350dp" />
+                        android:layout_height="350dp"
+                        android:layout_marginTop="10dp" />
 
                 </LinearLayout>
 
@@ -260,16 +241,22 @@
                         android:textColor="@color/blue_1"
                         android:textStyle="bold"
                         android:textSize="18sp"/>
-                    <TextView
+
+                    <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="35dp"
+                        android:layout_height="40dp"
                         android:layout_marginHorizontal="5dp"
-                        android:layout_marginTop="5dp"
-                        android:background="@drawable/edittext_border_1"
-                        android:paddingStart="8dp"
-                        android:paddingEnd="10dp"
-                        android:textSize="12sp"
-                        app:drawableEndCompat="@drawable/ic_dropdown_arrow" />
+                        android:layout_marginVertical="5dp"
+                        android:background="@drawable/cardview_edittext">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:spinnerMode="dropdown" />
+
+                    </RelativeLayout>
 
                     <LinearLayout
                         android:layout_width="fill_parent"
@@ -297,7 +284,6 @@
                             android:drawablePadding="5dp"
                             android:gravity="center_vertical"
                             android:layout_gravity="end"
-                            android:paddingEnd="0dp"
                             android:text="@string/human_resources_and_administration"
                             android:textSize="12sp"
                             app:drawableStartCompat="@drawable/ic_rectangle"
@@ -308,7 +294,8 @@
                     <com.github.mikephil.charting.charts.BarChart
                         android:id="@+id/barChart2"
                         android:layout_width="match_parent"
-                        android:layout_height="350dp" />
+                        android:layout_height="350dp"
+                        android:layout_marginTop="10dp"/>
 
                 </LinearLayout>
 

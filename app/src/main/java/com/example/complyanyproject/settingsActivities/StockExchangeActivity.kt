@@ -2,6 +2,7 @@ package com.example.complyanyproject.settingsActivities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.complyanyproject.adapter.IndustryTypeAdapter
 import com.example.complyanyproject.adapter.StockExchangeAdapter
@@ -58,6 +59,10 @@ class StockExchangeActivity : AppCompatActivity() {
         adapter = StockExchangeAdapter(this, itemList)
         binding.recyclerViewStockExchange.adapter = adapter
 
+        // added toast on add button
+        binding.addStockExchange.setOnClickListener {
+            Toast.makeText(this, "work in progress...", Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun onBackPressed() {

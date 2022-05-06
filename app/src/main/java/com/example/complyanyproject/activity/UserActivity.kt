@@ -43,7 +43,7 @@ class UserActivity : AppCompatActivity() {
 
 
 
-        val data1 = ModelClass("Masoom","0001", "mz@gmail.com","6392654000")
+        val data1 = ModelClass("Diksha","0001", "mz@gmail.com","6392654000")
         val data2 = ModelClass("Vishal","0002", "vk@gmail.com","4664546434")
         val data3 = ModelClass("Mohit","0003", "mk@gmail.com","4654132463")
         val data4 = ModelClass("Aditya","0004", "ad@gmail.com","2564897130")

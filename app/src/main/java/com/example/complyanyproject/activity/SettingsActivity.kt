@@ -3,11 +3,9 @@ package com.example.complyanyproject.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.complyanyproject.R
-import com.example.complyanyproject.databinding.ActivityCompanyBinding
-import com.example.complyanyproject.databinding.ActivityConfigureStandardBinding
 import com.example.complyanyproject.databinding.ActivitySettingsBinding
 import com.example.complyanyproject.settingsActivities.*
+import com.example.complyanyproject.settingsActivities.SubscriptionSettingActivity
 
 class SettingsActivity : AppCompatActivity() {
 
@@ -61,6 +59,20 @@ class SettingsActivity : AppCompatActivity() {
         // added clicks on Compliance Type
         binding.complianceTypeLayout.setOnClickListener {
             Intent(this, ComplianceTypeActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
+        // added clicks on backup
+        binding.backupLayout.setOnClickListener {
+            Intent(this, BackupActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
+        // added clicks on setting
+        binding.SubscriptionLayout.setOnClickListener {
+            Intent(this, SubscriptionSettingActivity::class.java).also{
                 startActivity(it)
             }
         }

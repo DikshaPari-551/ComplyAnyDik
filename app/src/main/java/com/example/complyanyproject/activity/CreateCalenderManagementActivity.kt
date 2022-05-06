@@ -25,6 +25,8 @@ class CreateCalenderManagementActivity : AppCompatActivity() {
     var flag8 = false
     var flag9 = false
 
+    // Working on it...
+
     private lateinit var binding : ActivityCreateCalenderManagementBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -62,11 +64,6 @@ class CreateCalenderManagementActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
-
-        // added drop down code
-        val numbers = resources.getStringArray(R.array.numbers)
-        val adapter = ArrayAdapter(this, R.layout.dropdown_list, numbers)
-        binding.financialFromAutoComplete1.setAdapter(adapter)
 
 
         // added calender picker code

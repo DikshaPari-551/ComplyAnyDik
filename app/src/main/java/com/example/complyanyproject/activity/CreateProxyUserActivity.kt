@@ -31,7 +31,7 @@ class CreateProxyUserActivity : AppCompatActivity() {
         }
 
         // added clicks on selector
-        binding.rlSelectEntityNameCreateProxyUser.setOnClickListener {
+       /* binding.rlSelectEntityNameCreateProxyUser.setOnClickListener {
             Intent(this, CompanySelectorActivity::class.java).also{
                 startActivityForResult(it, 1)
             }
@@ -55,7 +55,7 @@ class CreateProxyUserActivity : AppCompatActivity() {
             }
         }
 
-
+*/
         // added calender picker code
 
         val calendar: Calendar = Calendar.getInstance()
@@ -104,6 +104,7 @@ class CreateProxyUserActivity : AppCompatActivity() {
         finish()
     }
 
+/*
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
@@ -133,4 +134,5 @@ class CreateProxyUserActivity : AppCompatActivity() {
         }
 
     }
+*/
 }

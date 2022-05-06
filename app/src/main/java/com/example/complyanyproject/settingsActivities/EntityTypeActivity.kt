@@ -2,6 +2,7 @@ package com.example.complyanyproject.settingsActivities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.complyanyproject.R
 import com.example.complyanyproject.adapter.EntityTypeAdapter
@@ -56,6 +57,10 @@ class EntityTypeActivity : AppCompatActivity() {
         adapter = EntityTypeAdapter(this, itemList)
         binding.recyclerViewEntityType.adapter = adapter
 
+        // added toast on add button
+        binding.addEntityType.setOnClickListener {
+            Toast.makeText(this, "work in progress...", Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun onBackPressed() {

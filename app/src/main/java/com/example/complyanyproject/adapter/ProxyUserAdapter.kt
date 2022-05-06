@@ -29,8 +29,6 @@ class ProxyUserAdapter (val context: Context, val itemList : ArrayList<ProxyUser
         holder.itemDepartment.text = userData.Department
         holder.itemEndDate.text = userData.ProxyEndDate
 
-        holder.imgProxyUser.setOnClickListener {
-
             // added clicks on block
             holder.imgProxyUser.setOnClickListener {
 
@@ -72,7 +70,6 @@ class ProxyUserAdapter (val context: Context, val itemList : ArrayList<ProxyUser
 
             }
         }
-    }
 
     override fun getItemCount(): Int {
         return itemList.size

@@ -159,7 +159,6 @@
             android:background="@drawable/normal_bg"
             android:gravity="left"
             android:hint="Type Your Message here"
-            android:inputType="textCapWords"
             android:padding="10dp"
             android:textSize="16dp" />
 

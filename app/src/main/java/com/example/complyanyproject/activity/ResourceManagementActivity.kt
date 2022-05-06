@@ -34,6 +34,7 @@ class ResourceManagementActivity : AppCompatActivity() {
         // handle recyclerView
         val itemList : ArrayList<ResourceModelClass> = ArrayList()
 
+
         val data1 = ResourceModelClass("India", "Delhi", "Artical 112", "abc", "law", "123kb","today")
         itemList.add(data1)
 
@@ -42,6 +43,7 @@ class ResourceManagementActivity : AppCompatActivity() {
         adapter = ResourceAdapter(this, itemList)
 
         binding.recyclerView.adapter = adapter
+
 
         // added clicks on select options
         binding.selectNatureType.setOnClickListener {

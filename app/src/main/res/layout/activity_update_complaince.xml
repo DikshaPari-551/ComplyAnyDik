@@ -67,6 +67,8 @@
                 android:layout_height="45dp"
                 android:layout_marginHorizontal="9dp"
                 android:layout_marginVertical="5dp"
+                android:maxLength="50"
+                android:singleLine="true"
                 android:background="@drawable/rounded_edit_text"
                 android:drawableStart="@drawable/ic_search"
                 android:drawablePadding="5dp"

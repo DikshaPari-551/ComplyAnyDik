@@ -35,6 +35,7 @@ class UpComingActivity : AppCompatActivity() {
             "Payment",
             "02-April-2021",
             "2021-04-02T00:00:00.000Z",
+            "",
             ""
         )
         var data2 = UpComingModelClass(
@@ -43,6 +44,7 @@ class UpComingActivity : AppCompatActivity() {
             "Payment",
             "03-April-2021",
             "2021-04-02T00:00:00.000Z",
+            "",
             ""
         )
         var data3 = UpComingModelClass(
@@ -51,6 +53,7 @@ class UpComingActivity : AppCompatActivity() {
             "Payment",
             "05-April-2021",
             "2021-04-02T00:00:00.000Z",
+            "",
             ""
         )
         var data4 = UpComingModelClass(
@@ -59,6 +62,7 @@ class UpComingActivity : AppCompatActivity() {
             "Payment",
             "March-2021",
             "2021-04-02T00:00:00.000Z",
+            "",
             ""
         )
         var data5 = UpComingModelClass(
@@ -67,6 +71,7 @@ class UpComingActivity : AppCompatActivity() {
             "Payment",
             "08-April-2021",
             "2021-04-02T00:00:00.000Z",
+            "",
             ""
         )
         var data6 = UpComingModelClass(
@@ -75,6 +80,7 @@ class UpComingActivity : AppCompatActivity() {
             "Payment",
             "09-April-2021",
             "2021-04-02T00:00:00.000Z",
+            "",
             ""
         )
         var data7 = UpComingModelClass(
@@ -83,6 +89,7 @@ class UpComingActivity : AppCompatActivity() {
             "Meeting",
             "May-2021",
             "2021-05-07T00:00:00.000Z",
+            "",
             ""
         )
         var data8 = UpComingModelClass(
@@ -91,6 +98,7 @@ class UpComingActivity : AppCompatActivity() {
             "Payment",
             "April-2021",
             "2021-05-07T00:00:00.000Z",
+            "",
             ""
         )
         var data9 = UpComingModelClass(
@@ -99,7 +107,7 @@ class UpComingActivity : AppCompatActivity() {
             "Return",
             "May-2021",
             "2021-05-10T00:00:00.000Z",
-            ""
+            "",""
         )
         var data10 = UpComingModelClass(
             "IN-CW87YBYO",
@@ -107,6 +115,7 @@ class UpComingActivity : AppCompatActivity() {
             "Meeting",
             "April-2021",
             "2021-04-02T00:00:00.000Z",
+            "",
             ""
         )
         var data11 = UpComingModelClass(
@@ -115,6 +124,7 @@ class UpComingActivity : AppCompatActivity() {
             "Meeting",
             "June-2021",
             "2021-04-02T00:00:00.000Z",
+            "",
             ""
         )
         var data12 = UpComingModelClass(
@@ -123,6 +133,7 @@ class UpComingActivity : AppCompatActivity() {
             "Return",
             "Jun-2021",
             "2021-06-10T00:00:00.000Z",
+            "",
             ""
         )
         var data13 = UpComingModelClass(
@@ -131,6 +142,7 @@ class UpComingActivity : AppCompatActivity() {
             "Payment",
             "02-April-2021",
             "2021-04-02T00:00:00.000Z",
+            "",
             ""
         )
         var data14 = UpComingModelClass(
@@ -139,6 +151,7 @@ class UpComingActivity : AppCompatActivity() {
             "Payment",
             "03-April-2021",
             "2021-04-02T00:00:00.000Z",
+            "",
             ""
         )
         var data15 = UpComingModelClass(
@@ -147,7 +160,7 @@ class UpComingActivity : AppCompatActivity() {
             "Payment",
             "05-April-2021",
             "2021-04-02T00:00:00.000Z",
-            ""
+            "",""
         )
         var data16 = UpComingModelClass(
             "IN-KR7YZQUA",
@@ -155,7 +168,7 @@ class UpComingActivity : AppCompatActivity() {
             "Payment",
             "March-2021",
             "2021-04-02T00:00:00.000Z",
-            ""
+            "",""
         )
         var data17 = UpComingModelClass(
             "IN-Q409CCIY",
@@ -163,6 +176,7 @@ class UpComingActivity : AppCompatActivity() {
             "Payment",
             "08-April-2021",
             "2021-04-02T00:00:00.000Z",
+            "",
             ""
         )
         var data18 = UpComingModelClass(
@@ -171,6 +185,7 @@ class UpComingActivity : AppCompatActivity() {
             "Payment",
             "09-April-2021",
             "2021-04-02T00:00:00.000Z",
+            "",
             ""
         )
         var data19 = UpComingModelClass(
@@ -179,6 +194,7 @@ class UpComingActivity : AppCompatActivity() {
             "Meeting",
             "May-2021",
             "2021-05-07T00:00:00.000Z",
+            "",
             ""
         )
 
@@ -188,6 +204,7 @@ class UpComingActivity : AppCompatActivity() {
             "Return",
             "May-2021",
             "2021-05-10T00:00:00.000Z",
+            "",
             ""
         )
 

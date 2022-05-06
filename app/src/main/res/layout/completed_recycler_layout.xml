@@ -219,6 +219,8 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/etCalender"
+
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -270,6 +272,8 @@
                 android:layout_weight="6"
                 android:background="@drawable/cardview_edittext"
                 android:hint="Remarks"
+                android:maxLength="20"
+                android:singleLine="true"
                 android:textSize="14sp"
                 android:maxLines="1"
                 android:padding="7dp"

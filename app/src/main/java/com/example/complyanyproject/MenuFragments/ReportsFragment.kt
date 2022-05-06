@@ -6,22 +6,23 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
+import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.complyanyproject.R
 
 class ReportsFragment : Fragment() {
 
-    lateinit var global : RelativeLayout
-    lateinit var entity : RelativeLayout
-    lateinit var department : RelativeLayout
-    lateinit var globalEntity : RelativeLayout
-    lateinit var entityFunction : RelativeLayout
-    lateinit var rent : RelativeLayout
-    lateinit var insuarance : RelativeLayout
-    lateinit var agreement : RelativeLayout
-    lateinit var bankGurantee : RelativeLayout
-    lateinit var complienceData : RelativeLayout
+    lateinit var global : TextView
+    lateinit var entity : TextView
+    lateinit var department : TextView
+    lateinit var globalEntity : TextView
+    lateinit var entityFunction : TextView
+    lateinit var rent : TextView
+    lateinit var insuarance : TextView
+    lateinit var agreement : TextView
+    lateinit var bankGurantee : TextView
+    lateinit var complienceData : TextView
 
 
     override fun onCreateView(

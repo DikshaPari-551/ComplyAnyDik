@@ -20,7 +20,7 @@ class CountryRegionCompanyActivity : AppCompatActivity() {
         }
 
         binding.addIconCountryRegionCompany.setOnClickListener {
-            Toast.makeText(this, "clicked add button..", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "work in progress..", Toast.LENGTH_SHORT).show()
         }
     }
 

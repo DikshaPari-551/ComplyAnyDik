@@ -4,7 +4,9 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.complyanyproject.R
 import com.example.complyanyproject.model.IndustryTypeModelClass
@@ -26,6 +28,13 @@ class StockExchangeAdapter(val context: Context, val itemList : ArrayList<StockE
         holder.stockExchange.text = userData.stockExchange
         holder.stockExchangeCreatedAt.text = userData.createdAt
 
+        holder.imgEdit.setOnClickListener {
+            Toast.makeText(context, "Clicked on edit button", Toast.LENGTH_SHORT).show()
+        }
+
+        holder.imgDelete.setOnClickListener {
+            Toast.makeText(context, "Clicked on delete button", Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun getItemCount(): Int {
@@ -38,6 +47,8 @@ class StockExchangeAdapter(val context: Context, val itemList : ArrayList<StockE
         val stockExchange : TextView = view.findViewById(R.id.stockExchange)
         val stockExchangeCreatedAt : TextView = view.findViewById(R.id.stockExchangeCreatedAt)
 
+        val imgEdit = view.findViewById<ImageView>(R.id.imgEdit)
+        val imgDelete = view.findViewById<ImageView>(R.id.imgDelete)
     }
 
 }

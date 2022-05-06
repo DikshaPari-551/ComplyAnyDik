@@ -127,14 +127,13 @@
                                 android:paddingRight="8dp"
                                 android:paddingBottom="8dp">
 
-                                <TextView
-                                    android:id="@+id/txtEntityNameCreateChangeUser"
+                                <Spinner
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
-                                    android:hint="Select Entity Name"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp" />
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="-10dp"
+                                    android:entries="@array/entity_option"
+                                    android:spinnerMode="dropdown" />
 
                             </RelativeLayout>
 
@@ -187,14 +186,13 @@
                                 android:paddingRight="8dp"
                                 android:paddingBottom="8dp">
 
-                                <TextView
-                                    android:id="@+id/txtUserNameCreateChangeUser"
+                                <Spinner
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
-                                    android:hint="Select User Name"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp" />
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="-10dp"
+                                    android:entries="@array/manager_option"
+                                    android:spinnerMode="dropdown" />
 
                             </RelativeLayout>
 
@@ -248,14 +246,13 @@
                                 android:paddingRight="8dp"
                                 android:paddingBottom="8dp">
 
-                                <TextView
-                                    android:id="@+id/txtDepartmentOfReplacedUserCreateChangeUser"
+                                <Spinner
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
-                                    android:hint="Select Department"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp" />
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="-10dp"
+                                    android:entries="@array/department_option"
+                                    android:spinnerMode="dropdown" />
 
                             </RelativeLayout>
 
@@ -308,14 +305,13 @@
                                 android:paddingRight="8dp"
                                 android:paddingBottom="8dp">
 
-                                <TextView
-                                    android:id="@+id/txtReplacedUserNameCreateChangeUser"
+                                <Spinner
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
-                                    android:hint="Select Replaced User"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp" />
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="-10dp"
+                                    android:entries="@array/manager_option"
+                                    android:spinnerMode="dropdown" />
 
                             </RelativeLayout>
 

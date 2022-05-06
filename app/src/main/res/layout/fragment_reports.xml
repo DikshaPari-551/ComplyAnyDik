@@ -1,373 +1,218 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MenuFragments.ReportsFragment">
-
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_alignParentTop="true"
-        android:background="@color/white"
-        android:paddingHorizontal="8dp">
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:paddingHorizontal="8dp">
 
 
-        <TextView
-            android:id="@+id/toolbarTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center_vertical"
-            android:text="Reports"
-            android:textColor="@color/blue"
-            android:textSize="21sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="Reports"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-    </androidx.appcompat.widget.Toolbar>
+        </androidx.appcompat.widget.Toolbar>
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_below="@id/toolbar"
-        android:background="@color/border_color" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/divider">
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
-
-            <RelativeLayout
+            <TextView
                 android:id="@+id/globalLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="25dp"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:text="Global"
-                    android:textColor="@color/black"
-                    android:textSize="19sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_forward_arrow" />
-
-            </RelativeLayout>
-
+                android:layout_marginHorizontal="15dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                android:paddingHorizontal="4dp"
+                android:paddingVertical="10dp"
+                android:textSize="16sp"
+                android:drawableRight="@drawable/ic_forward_arrow"
+                android:text="Global" />
             <View
-                android:id="@+id/divider2"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginHorizontal="25dp"
-                android:layout_below="@id/globalLayout"
-                android:background="@color/border_color" />
 
-            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+            <TextView
                 android:id="@+id/entityLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="25dp"
-                android:layout_below="@id/divider2"
-                android:padding="10dp">
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:text="Entity"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_forward_arrow" />
-
-            </RelativeLayout>
-
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="15dp"
+                android:textColor="@color/black"
+                android:paddingHorizontal="4dp"
+                android:paddingVertical="10dp"
+                android:textSize="16sp"
+                android:drawableRight="@drawable/ic_forward_arrow"
+                android:text="Entity" />
             <View
-                android:id="@+id/divider3"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_below="@id/globalLayout"
-                android:layout_marginHorizontal="25dp"
-                android:background="@color/border_color" />
 
-            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+            <TextView
                 android:id="@+id/departmentLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="25dp"
-                android:layout_below="@id/divider3"
-                android:padding="10dp">
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:text="Department"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_forward_arrow" />
-
-            </RelativeLayout>
-
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="15dp"
+                android:textColor="@color/black"
+                android:paddingHorizontal="4dp"
+                android:paddingVertical="10dp"
+                android:textSize="16sp"
+                android:drawableRight="@drawable/ic_forward_arrow"
+                android:text="Department" />
             <View
-                android:id="@+id/divider4"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_below="@id/departmentLayout"
-                android:layout_marginHorizontal="25dp"
-                android:background="@color/border_color" />
 
-            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+            <TextView
                 android:id="@+id/globalEntityLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/divider4"
-                android:layout_marginHorizontal="25dp"
-                android:padding="10dp">
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:text="Global Entity Department"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_forward_arrow" />
-
-            </RelativeLayout>
-
+                android:layout_marginHorizontal="15dp"
+                android:textColor="@color/black"
+                android:paddingHorizontal="4dp"
+                android:paddingVertical="10dp"
+                android:textSize="16sp"
+                android:drawableRight="@drawable/ic_forward_arrow"
+                android:text="Global Entity Department" />
             <View
-                android:id="@+id/divider5"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_below="@id/globalEntityLayout"
-                android:layout_marginHorizontal="25dp"
-                android:background="@color/border_color" />
 
-            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+            <TextView
                 android:id="@+id/entityFuntionLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="25dp"
-                android:layout_below="@id/divider5"
-                android:padding="10dp">
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:text="Entity Function"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_forward_arrow" />
-
-            </RelativeLayout>
-
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="15dp"
+                android:textColor="@color/black"
+                android:paddingHorizontal="4dp"
+                android:paddingVertical="10dp"
+                android:textSize="16sp"
+                android:drawableRight="@drawable/ic_forward_arrow"
+                android:text="Entity Function" />
             <View
-                android:id="@+id/divider6"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_below="@id/entityFuntionLayout"
-                android:layout_marginHorizontal="25dp"
-                android:background="@color/border_color" />
 
-            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+            <TextView
                 android:id="@+id/rentLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/divider6"
-                android:layout_marginHorizontal="25dp"
-                android:padding="10dp">
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:text="Rent"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_forward_arrow" />
-
-            </RelativeLayout>
-
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="15dp"
+                android:textColor="@color/black"
+                android:paddingHorizontal="4dp"
+                android:paddingVertical="10dp"
+                android:textSize="16sp"
+                android:drawableRight="@drawable/ic_forward_arrow"
+                android:text="Rent" />
             <View
-                android:id="@+id/divider7"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_below="@id/rentLayout"
-                android:layout_marginHorizontal="25dp"
-                android:background="@color/border_color" />
 
-            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+            <TextView
                 android:id="@+id/insuranceLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/divider7"
-                android:layout_marginHorizontal="25dp"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:text="Insurance"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_forward_arrow" />
-
-            </RelativeLayout>
-
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="15dp"
+                android:textColor="@color/black"
+                android:paddingHorizontal="4dp"
+                android:paddingVertical="10dp"
+                android:textSize="16sp"
+                android:drawableRight="@drawable/ic_forward_arrow"
+                android:text="Insurance" />
             <View
-                android:id="@+id/divider8"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_below="@id/insuranceLayout"
-                android:layout_marginHorizontal="25dp"
-                android:background="@color/border_color" />
 
-            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+            <TextView
                 android:id="@+id/agreementLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/divider8"
-                android:layout_marginHorizontal="25dp"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:text="Agreement"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_forward_arrow" />
-
-            </RelativeLayout>
-
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="15dp"
+                android:textColor="@color/black"
+                android:paddingHorizontal="4dp"
+                android:paddingVertical="10dp"
+                android:textSize="16sp"
+                android:drawableRight="@drawable/ic_forward_arrow"
+                android:text="Agreement" />
             <View
-                android:id="@+id/divider9"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginHorizontal="25dp"
-                android:layout_below="@id/agreementLayout"
-                android:background="@color/border_color" />
 
-            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+            <TextView
                 android:id="@+id/bankLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="25dp"
-                android:layout_below="@id/divider9"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:text="Bank Guarantee"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_forward_arrow" />
-
-            </RelativeLayout>
-
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="15dp"
+                android:textColor="@color/black"
+                android:paddingHorizontal="4dp"
+                android:paddingVertical="10dp"
+                android:textSize="16sp"
+                android:drawableRight="@drawable/ic_forward_arrow"
+                android:text="Bank Guarantee" />
             <View
-                android:id="@+id/divider10"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_below="@id/bankLayout"
-                android:layout_marginHorizontal="25dp"
-                android:background="@color/border_color" />
 
-            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+            <TextView
                 android:id="@+id/ComplienceDataLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="25dp"
-                android:layout_below="@id/divider10"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:text="Compliance Data"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_forward_arrow" />
-
-            </RelativeLayout>
-
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="15dp"
+                android:textColor="@color/black"
+                android:paddingHorizontal="4dp"
+                android:paddingVertical="10dp"
+                android:textSize="16sp"
+                android:drawableRight="@drawable/ic_forward_arrow"
+                android:text="Complaince Data" />
             <View
+
                 android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
                 android:layout_height="1dp"
-                android:layout_marginHorizontal="25dp"
-                android:layout_below="@id/ComplienceDataLayout"
-                android:background="@color/border_color" />
+                android:background="@color/grey" />
 
-        </LinearLayout>
-    </ScrollView>
 
-</RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

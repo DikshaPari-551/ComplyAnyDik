@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ComplyAnyApp(Masoom)</string>
+    <string name="app_name">ComplyAnyTest</string>
     <string name="back">Back</string>
     <string name="users">Users</string>
     <string name="_29_6">29/6</string>
@@ -79,19 +79,19 @@
     // added string for configure standard
     <string name="save">Save</string>
     <string name="next">Next</string>
-    <string name="entity_name_standard">Entity Name *</string>
+    <string name="entity_name_standard">Entity Name</string>
     <string name="select_country_office">Select Country Office</string>
-    <string name="country_office">Country Office *</string>
-    <string name="global_sub_region">Global Sub-Region *</string>
-    <string name="global_region">Global Region *</string>
+    <string name="country_office">Country Office</string>
+    <string name="global_sub_region">Global Sub-Region</string>
+    <string name="global_region">Global Region</string>
     <string name="applicable_laws">Applicable Laws</string>
     <string name="assign_user_and_department">Assign User And Department</string>
-    <string name="income_tax_assign_user">Income Tax *</string>
+    <string name="income_tax_assign_user">Income Tax</string>
     <string name="select">Select</string>
-    <string name="goods_and_service_tax">Goods And Service Tax *</string>
-    <string name="companies_act">Companies Act *</string>
-    <string name="provident_fund_act">Provident Fund Act *</string>
-    <string name="employees_state_insurance">Employees State Insurance *</string>
+    <string name="goods_and_service_tax">Goods And Service Tax</string>
+    <string name="companies_act">Companies Act</string>
+    <string name="provident_fund_act">Provident Fund Act</string>
+    <string name="employees_state_insurance">Employees State Insurance</string>
     <string name="generate_complience">Generate Complience</string>
     <string name="sub_law_or_head">Sub-Law or Head</string>
     <string name="view_reports"><font size="16">View Reports</font></string>
@@ -113,15 +113,123 @@
         <item>2</item>
         <item>3</item>
         <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
     </string-array>
 
-    <string-array name="compliance_options">
+    <string-array name="dashboard_options">
         <item>All</item>
         <item>Compliant</item>
         <item>Non-Compliant</item>
         <item>Critical</item>
         <item>Non-Critical</item>
     </string-array>
+    <string-array name="date_option">
+        <item>Date</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="month_option">
+        <item>Month</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="year_option">
+        <item>Year</item>
+        <item>2000</item>
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+
+    </string-array>
+
+    //crete user (user management)
+    <string-array name="entity_option">
+        <item>Select</item>
+        <item>SoloEntity</item>
+    </string-array>
+
+    <string-array name="department_option">
+        <item> Client</item>
+        <item> Sales</item>
+        <item> Operations</item>
+        <item> Human Resource and Administration</item>
+        <item> Legal</item>
+    </string-array>
+    <string-array name="manager_option">
+        <item>Select</item>
+        <item>solonew</item>
+        <item>tanveer</item>
+    </string-array>
+
+
 
     <string name="terms_of_use_1">
         1. SCOPE OF AGREEMENT This Terms of Use Agreement ("Agreement") by and between the Project Management Institute
@@ -183,9 +291,8 @@
         as set forth in more detail in Section 6 below. not to make negative or disparaging references to PMI, its services or its members or
         otherwise compare PMI, its services or its members unfavorably to others
     </string>
-    <string name="policy"><font size="17">policy.</font></string>
-    <string name="terms_of_use"><font size="17">terms of use</font></string>
-    <string name="by_signing_in_you_agree_to_our"><font size="17">By Signing in, you agree to our  </font></string>
+    <string name="policy">policy.</string>
+    <string name="terms_of_use">terms of use</string>
     <string name="preference_file_name">ComplyAnyMasoom</string>
     <string name="logout">Logout</string>
     <string name="settings">Settings</string>
@@ -214,5 +321,43 @@
     <string name="regional_company">Regional Company</string>
     <string name="global_company">Global Company</string>
     <string name="company_management">Company Management</string>
+    <string name="by_signing_in_you_agree_to_our">By Signing in, you agree to our</string>
+
+
+    // added array string
+    <string-array name="entity_list">
+        <item>sdad</item>
+        <item>asdasd</item>
+        <item>asdad</item>
+        <item>dsd</item>
+        <item>wqqq</item>
+        <item>axazz</item>
+        <item>qeqw</item>
+    </string-array>
+
+
+    // string array for register email notification
+    <string-array name="country_list">
+        <item>India</item>
+        <item>Pakistan</item>
+        <item>Austrailia</item>
+        <item>America</item>
+        <item>Dubai</item>
+        <item>Russia</item>
+        <item>Ukraine</item>
+        <item>Bangladesh</item>
+        <item>Maldives</item>
+        <item>Ethopia</item>
+        <item>Rome</item>
+        <item>New Zealand</item>
+        <item>South Africa</item>
+        <item>Zimbabwe</item>
+        <item>England</item>
+    </string-array>
+
+    <string-array name="masoom">
+        <item></item>
+    </string-array>
+
 
 </resources>

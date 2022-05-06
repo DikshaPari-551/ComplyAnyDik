@@ -28,7 +28,7 @@ class CreateChangeUserActivity : AppCompatActivity() {
         }
 
         // added clicks on selector
-        binding.rlSelectEntityNameCreateChangeUser.setOnClickListener {
+     /*   binding.rlSelectEntityNameCreateChangeUser.setOnClickListener {
             Intent(this, CompanySelectorActivity::class.java).also{
                 startActivityForResult(it, 1)
             }
@@ -54,14 +54,14 @@ class CreateChangeUserActivity : AppCompatActivity() {
 
 
 
-
+*/
     }
 
     override fun onBackPressed() {
         finish()
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+  /*  override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
         // added text in Create Change User
@@ -89,5 +89,5 @@ class CreateChangeUserActivity : AppCompatActivity() {
             }
         }
 
-    }
+    }*/
 }

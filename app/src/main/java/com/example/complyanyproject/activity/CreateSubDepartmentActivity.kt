@@ -35,11 +35,11 @@ class CreateSubDepartmentActivity : AppCompatActivity() {
         saveSubDepartment.setOnClickListener{
 
             if (txtSelectDeparmentName.text.toString().isEmpty()){
-                checkDepartmentName.text = "*Select Department"
+                checkDepartmentName.text = "Required"
             }
             else if(SelectSubDepartmentName.text.toString().isEmpty()){
                 checkDepartmentName.text =""
-                checkSubDepartmentName.text = "*Please enter Client Sub Group Name"
+                checkSubDepartmentName.text = "*Required"
             }
             else {
                 checkDepartmentName.text = ""

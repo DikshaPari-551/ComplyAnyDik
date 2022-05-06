@@ -36,6 +36,7 @@ class CompletedActivity : AppCompatActivity() {
             "Payment",
             "02-April-2021",
             "2021-04-02T00:00:00.000Z",
+            "",
             ""
         )
         val data2 = CompletedModelClass(
@@ -44,7 +45,8 @@ class CompletedActivity : AppCompatActivity() {
             "Payment",
             "03-April-2021",
             "2021-04-02T00:00:00.000Z",
-            ""
+            "",
+                    ""
         )
         var data3 = CompletedModelClass(
             "IN-HBNLGNTU",
@@ -52,6 +54,7 @@ class CompletedActivity : AppCompatActivity() {
             "Payment",
             "05-April-2021",
             "2021-04-02T00:00:00.000Z",
+            "",
             ""
         )
         var data4 = CompletedModelClass(
@@ -60,6 +63,7 @@ class CompletedActivity : AppCompatActivity() {
             "Payment",
             "March-2021",
             "2021-04-02T00:00:00.000Z",
+            "",
             ""
         )
         var data5 = CompletedModelClass(
@@ -68,6 +72,7 @@ class CompletedActivity : AppCompatActivity() {
             "Payment",
             "08-April-2021",
             "2021-04-02T00:00:00.000Z",
+            "",
             ""
         )
         var data6 = CompletedModelClass(
@@ -76,7 +81,7 @@ class CompletedActivity : AppCompatActivity() {
             "Payment",
             "09-April-2021",
             "2021-04-02T00:00:00.000Z",
-            ""
+            "",""
         )
         var data7 = CompletedModelClass(
             "IN-OIICTCGF",
@@ -84,7 +89,7 @@ class CompletedActivity : AppCompatActivity() {
             "Meeting",
             "May-2021",
             "2021-05-07T00:00:00.000Z",
-            ""
+            "",""
         )
         var data8 = CompletedModelClass(
             "IN-GSDN2SYR",
@@ -92,7 +97,7 @@ class CompletedActivity : AppCompatActivity() {
             "Payment",
             "April-2021",
             "2021-05-07T00:00:00.000Z",
-            ""
+            "",""
         )
         var data9 = CompletedModelClass(
             "IN-DSRUALAC",
@@ -100,7 +105,7 @@ class CompletedActivity : AppCompatActivity() {
             "Return",
             "May-2021",
             "2021-05-10T00:00:00.000Z",
-            ""
+            "",""
         )
         var data10 = CompletedModelClass(
             "IN-CW87YBYO",
@@ -108,7 +113,7 @@ class CompletedActivity : AppCompatActivity() {
             "Meeting",
             "April-2021",
             "2021-04-02T00:00:00.000Z",
-            ""
+            "",""
         )
         var data11 = CompletedModelClass(
             "IN-VNVJY3Z1",
@@ -116,7 +121,7 @@ class CompletedActivity : AppCompatActivity() {
             "Meeting",
             "June-2021",
             "2021-04-02T00:00:00.000Z",
-            ""
+            "" ,""
         )
         var data12 = CompletedModelClass(
             "IN-DFIXP7D",
@@ -124,7 +129,7 @@ class CompletedActivity : AppCompatActivity() {
             "Return",
             "Jun-2021",
             "2021-06-10T00:00:00.000Z",
-            ""
+            "",""
         )
         var data13 = CompletedModelClass(
             "IN-WOV28PIW",
@@ -132,7 +137,7 @@ class CompletedActivity : AppCompatActivity() {
             "Payment",
             "02-April-2021",
             "2021-04-02T00:00:00.000Z",
-            ""
+            "" ,""
         )
         var data14 = CompletedModelClass(
             "IN-YUFWHNUH",
@@ -140,7 +145,7 @@ class CompletedActivity : AppCompatActivity() {
             "Payment",
             "03-April-2021",
             "2021-04-02T00:00:00.000Z",
-            ""
+            "",""
         )
         var data15 = CompletedModelClass(
             "IN-HBNLGNTU",
@@ -148,7 +153,7 @@ class CompletedActivity : AppCompatActivity() {
             "Payment",
             "05-April-2021",
             "2021-04-02T00:00:00.000Z",
-            ""
+            "" ,""
         )
         var data16 = CompletedModelClass(
             "IN-KR7YZQUA",
@@ -156,7 +161,7 @@ class CompletedActivity : AppCompatActivity() {
             "Payment",
             "March-2021",
             "2021-04-02T00:00:00.000Z",
-            ""
+            "",""
         )
         var data17 = CompletedModelClass(
             "IN-Q409CCIY",
@@ -164,7 +169,7 @@ class CompletedActivity : AppCompatActivity() {
             "Payment",
             "08-April-2021",
             "2021-04-02T00:00:00.000Z",
-            ""
+            "" ,""
         )
         var data18 = CompletedModelClass(
             "IN-9C39EPWJ",
@@ -172,7 +177,7 @@ class CompletedActivity : AppCompatActivity() {
             "Payment",
             "09-April-2021",
             "2021-04-02T00:00:00.000Z",
-            ""
+            "",""
         )
         var data19 = CompletedModelClass(
             "IN-OIICTCGF",
@@ -180,7 +185,7 @@ class CompletedActivity : AppCompatActivity() {
             "Meeting",
             "May-2021",
             "2021-05-07T00:00:00.000Z",
-            ""
+            "" ,""
         )
 
         var data20 = CompletedModelClass(
@@ -189,7 +194,7 @@ class CompletedActivity : AppCompatActivity() {
             "Return",
             "May-2021",
             "2021-05-10T00:00:00.000Z",
-            ""
+            "" ,""
         )
 
         array.add(data1)

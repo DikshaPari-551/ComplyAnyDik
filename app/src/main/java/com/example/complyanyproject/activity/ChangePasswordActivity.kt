@@ -3,6 +3,7 @@ package com.example.complyanyproject.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import com.example.complyanyproject.R
 import com.example.complyanyproject.databinding.ActivityChangePasswordBinding
@@ -36,24 +37,53 @@ class ChangePasswordActivity : AppCompatActivity() {
                     "$"
 
             if (oldPass.isEmpty()){
-                binding.etOldPass.setError("This field is required")
-            }
-            else if (oldPass == newPass){
-                binding.etNewPass.setError("New password must me different")
+                binding.txtOldPassword.visibility = View.VISIBLE
+                binding.txtOldPassword.text = "*Please enter old password"
             }
             else if (newPass.isEmpty()){
-                binding.etNewPass.setError("This field is required")
+                binding.txtOldPassword.visibility = View.GONE
+                binding.txtNewPassword.visibility = View.VISIBLE
+                binding.txtNewPassword.text = "*Please enter new password"
+                binding.etNewPass.requestFocus()
+            }
+            else if (oldPass == newPass){
+                binding.txtOldPassword.visibility = View.GONE
+                binding.txtNewPassword.text = "*New password must me different"
+                binding.etOldPass.requestFocus()
             }
             else if(newPass.length < 8){
-                binding.etNewPass.setError("Password must contain at least 8 characters")
+                binding.txtOldPassword.visibility = View.GONE
+                binding.etNewPass.requestFocus()
             }
             else if (!newPass.matches(checkPass.toRegex())){
-                binding.etNewPass.setError("Password too weak")
+                binding.txtOldPassword.visibility = View.GONE
+                binding.txtNewPassword.text = "*Password should have minimum 8 characters, atleast 1 uppercase letter,1 lowercase letter,1 number and 1 special character."
+                binding.etNewPass.requestFocus()
+            }
+            else if(confirmPass.isEmpty()){
+                binding.txtNewPassword.visibility = View.GONE
+                binding.txtConfirmNewPassword.visibility = View.VISIBLE
+                binding.txtConfirmNewPassword.text = "*Please enter confirm password"
+                binding.etConfirmNewPass.requestFocus()
             }
             else if (confirmPass != newPass){
-                binding.etConfirmNewPass.setError("New password and confirm password must be same")
+                binding.txtNewPassword.visibility = View.GONE
+                binding.txtConfirmNewPassword.visibility = View.VISIBLE
+                binding.txtConfirmNewPassword.text = "*New password and confirm new password should match. "
+                binding.etConfirmNewPass.requestFocus()
             }
             else{
+                // hide tv textViews
+                binding.txtOldPassword.visibility = View.GONE
+                binding.txtNewPassword.visibility = View.GONE
+                binding.txtConfirmNewPassword.visibility = View.GONE
+
+                // empty tv texts
+                binding.txtOldPassword.text = ""
+                binding.txtNewPassword.text = ""
+                binding.txtConfirmNewPassword.text = ""
+
+                // remove texts from edit text
                 binding.etOldPass.text.clear()
                 binding.etNewPass.text.clear()
                 binding.etConfirmNewPass.text.clear()

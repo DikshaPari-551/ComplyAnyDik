@@ -68,16 +68,17 @@
             android:id="@+id/CG_search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_marginHorizontal="10dp"
             android:layout_weight="1"
             android:background="@drawable/backgroundsearch"
             android:drawableLeft="@drawable/ic_search"
             android:hint="Search"
-            android:layout_below="@id/view"
-            android:layout_marginHorizontal="10dp"
+            android:inputType="text"
+            android:maxLength="50"
             android:maxLines="1"
-            android:maxLength="40"
-            android:singleLine="true"
             android:padding="10dp"
+            android:singleLine="true"
             android:textSize="15dp" />
     </RelativeLayout>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+<!--
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/app_bar_home"
             android:layout_width="match_parent"
@@ -51,7 +52,7 @@
                     android:layout_gravity="center"
                     android:text="@string/register_email_notification"
                     android:textColor="@color/blue"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -69,6 +70,57 @@
                 android:layout_height="1dp" />
 
         </com.google.android.material.appbar.AppBarLayout>
+-->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:paddingHorizontal="0dp">
+            <TextView
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="5dp"
+                app:drawableStartCompat="@drawable/ic_back_arrow"
+                app:drawableTint="@color/blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="Register Email Notification"
+                android:textColor="@color/blue"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgFilter"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_save"
+                 />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_below="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -109,13 +161,24 @@
                 </LinearLayout>
 
                 <EditText
+                    android:id="@+id/etUserRegister"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/edittext_border"
                     android:hint="@string/enter_user_name"
                     android:inputType="text"
+                    android:maxLength="30"
                     android:paddingHorizontal="10dp" />
+
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textColor="#FF0808"
+                    android:textSize="10dp" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -140,13 +203,24 @@
                 </LinearLayout>
 
                 <EditText
+                    android:id="@+id/etEmailRegister"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/edittext_border"
                     android:hint="@string/enter_email_id"
+                    android:maxLength="30"
                     android:inputType="textEmailAddress"
                     android:paddingHorizontal="10dp" />
+
+                <TextView
+                    android:id="@+id/txtEmailID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textColor="#FF0808"
+                    android:textSize="10dp" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -170,16 +244,22 @@
                         android:textStyle="bold" />
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/etSelectEntity"
+                <Spinner
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/edittext_border"
-                    android:gravity="center_vertical"
-                    android:paddingHorizontal="10dp"
-                    android:text="@string/select_entity_name"
-                    app:drawableEndCompat="@drawable/ic_down_arrow" />
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="-10dp"
+                    android:entries="@array/entity_option"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/txtEntity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textColor="#FF0808"
+                    android:textSize="10dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -218,4 +298,4 @@
 
     </LinearLayout>
 
-</ScrollView>
+</LinearLayout>

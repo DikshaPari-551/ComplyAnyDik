@@ -59,8 +59,8 @@ class CreateUserActivity : AppCompatActivity() {
             }
         }
 
-        binding.rlSelectEntityCreateUser.setOnClickListener {
-            Intent(this, CompanySelectorActivity::class.java).also{
+       /* binding.rlSelectEntityCreateUser.setOnClickListener {
+            Intent(this, EntityActivity::class.java).also{
                 startActivityForResult(it, 6)
             }
         }
@@ -76,8 +76,8 @@ class CreateUserActivity : AppCompatActivity() {
                 startActivityForResult(it, 8)
             }
         }
-
-        binding.rlSelectUserRoleCreateUser.setOnClickListener {
+*/
+      /*  binding.rlSelectUserRoleCreateUser.setOnClickListener {
             Intent(this, CompanySelectorActivity::class.java).also{
                 startActivityForResult(it, 9)
             }
@@ -93,8 +93,7 @@ class CreateUserActivity : AppCompatActivity() {
             Intent(this, CompanySelectorActivity::class.java).also{
                 startActivityForResult(it, 11)
             }
-        }
-
+        }*/
     }
 
     override fun onBackPressed() {
@@ -137,7 +136,7 @@ class CreateUserActivity : AppCompatActivity() {
 
 
         // added text in select law and user
-        if (requestCode == 6){
+     /*   if (requestCode == 6){
             if (resultCode == Activity.RESULT_OK){
                 binding.txtEntityNameCreateUser.text = data?.getStringExtra("hello")
             }
@@ -154,7 +153,8 @@ class CreateUserActivity : AppCompatActivity() {
                 binding.txtSubDepartmentCreateUser.text = data?.getStringExtra("hello")
             }
         }
-
+*/
+/*
         if (requestCode == 9){
             if (resultCode == Activity.RESULT_OK){
                 binding.txtUserRoleCreateUser.text = data?.getStringExtra("hello")
@@ -172,7 +172,7 @@ class CreateUserActivity : AppCompatActivity() {
                 binding.txtEscalaionManagerCreateUser.text = data?.getStringExtra("hello")
             }
         }
-
+*/
 
     }
 

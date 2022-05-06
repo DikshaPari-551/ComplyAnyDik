@@ -75,7 +75,6 @@
 
 
     <EditText
-        android:paddingStart="5dp"
         android:id="@+id/searchChangeUser"
         android:layout_width="match_parent"
         android:layout_height="45dp"
@@ -86,6 +85,11 @@
         android:drawableStart="@drawable/ic_search"
         android:drawablePadding="5dp"
         android:hint="@string/search"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:paddingStart="5dp"
+        android:singleLine="true"
         tools:ignore="RtlSymmetry" />
 
     <androidx.recyclerview.widget.RecyclerView
