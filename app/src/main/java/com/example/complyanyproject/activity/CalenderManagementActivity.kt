@@ -12,6 +12,8 @@ import com.example.complyanyproject.selectorActivity.SelectorCalenderManagement
 
 class CalenderManagementActivity : AppCompatActivity() {
 
+    // Added uncesssary comment...
+
     private lateinit var binding: ActivityCalenderManagementBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +27,7 @@ class CalenderManagementActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
+
 
         // added click on select
         binding.rlCalenderManagement.setOnClickListener {
